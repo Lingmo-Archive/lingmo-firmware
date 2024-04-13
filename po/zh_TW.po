@@ -1,0 +1,1011 @@
+# Chinese (Taiwan) translation for lingmo-firmware.
+# Copyright (C) 2024 lingmo-firmware's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lingmo-firmware package.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lingmo-firmware master\n"
+"Report-Msgid-Bugs-To: https://github.com/LingmoOS/lingmo-firmware/issues\n"
+"POT-Creation-Date: 2024-02-13 04:12+0000\n"
+"PO-Revision-Date: 2024-02-15 00:36+0800\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. TRANSLATORS: the application name
+#. window title
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:8
+#: data/org.lingmo.Firmware.desktop.in:3 src/gfu-main.ui:84
+msgid "Firmware"
+msgstr "韌體"
+
+#. TRANSLATORS: one-line description for the app
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:10
+#: data/org.lingmo.Firmware.desktop.in:4
+msgid "Install firmware on devices"
+msgstr "安裝韌體到裝置上"
+
+#. TRANSLATORS: AppData description marketing paragraph
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:13
+msgid "Update, reinstall and downgrade firmware on devices supported by fwupd."
+msgstr "透過 fwupd 更新、重新安裝、降級所支援的裝置韌體。"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:20
+msgid "Devices panel"
+msgstr "裝置面板"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:24
+msgid "Releases panel"
+msgstr "發行版面板"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:28
+msgid "Richard Hughes"
+msgstr "Richard Hughes"
+
+#. TRANSLATORS: these are desktop keywords - remember the trailing ';' :)
+#: data/org.lingmo.Firmware.desktop.in:12
+msgid "Firmware;"
+msgstr "Firmware;韌體;"
+
+#. TRANSLATORS: We verified the payload against the server
+#: src/gfu-common.c:144
+msgid "Trusted payload"
+msgstr "受信任的實載階段"
+
+#. TRANSLATORS: We verified the meatdata against the server
+#: src/gfu-common.c:148
+msgid "Trusted metadata"
+msgstr "受信任的中介資料"
+
+#. TRANSLATORS: version is newer
+#: src/gfu-common.c:152
+msgid "Is upgrade"
+msgstr "是升級"
+
+#. TRANSLATORS: version is older
+#: src/gfu-common.c:156
+msgid "Is downgrade"
+msgstr "是降級"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:160
+msgid "Blocked version"
+msgstr "封鎖的版本"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:164
+msgid "Not approved"
+msgstr "未被批准"
+
+#. TRANSLATORS: is not the main firmware stream
+#: src/gfu-common.c:168
+msgid "Alternate branch"
+msgstr "替代分支"
+
+#. TRANSLATORS: is not supported by the vendor
+#: src/gfu-common.c:172
+msgid "Community supported"
+msgstr "社群支援"
+
+#. TRANSLATORS: the QA team is someone we trust
+#: src/gfu-common.c:177
+msgid "Report is trusted"
+msgstr "回報受到信任"
+
+#. TRANSLATORS: Device cannot be removed easily
+#: src/gfu-common.c:303
+msgid "Internal device"
+msgstr "內部裝置"
+
+#. TRANSLATORS: Device is updatable in this or any other mode
+#: src/gfu-common.c:307
+msgid "Updatable"
+msgstr "可以更新"
+
+#. TRANSLATORS: Update can only be done from offline mode
+#: src/gfu-common.c:311
+msgid "Update requires a reboot"
+msgstr "更新要求重新開機"
+
+#. TRANSLATORS: Must be plugged in to an outlet
+#: src/gfu-common.c:315
+msgid "System requires external power source"
+msgstr "系統要求接上外部電源"
+
+#. TRANSLATORS: Is locked and can be unlocked
+#: src/gfu-common.c:319
+msgid "Device is locked"
+msgstr "裝置已鎖定"
+
+#. TRANSLATORS: Is found in current metadata
+#: src/gfu-common.c:323
+msgid "Supported on LVFS"
+msgstr "LVFS 上有支援"
+
+#. TRANSLATORS: Requires a bootloader mode to be manually enabled by the user
+#: src/gfu-common.c:327
+msgid "Requires a bootloader"
+msgstr "要求要有開機載入器"
+
+#. TRANSLATORS: Requires a reboot to apply firmware or to reload hardware
+#: src/gfu-common.c:331
+msgid "Needs a reboot after installation"
+msgstr "需要在安裝後重新開機"
+
+#. TRANSLATORS: Requires system shutdown to apply firmware
+#: src/gfu-common.c:335
+msgid "Needs shutdown after installation"
+msgstr "需要在安裝後關機"
+
+#. TRANSLATORS: Has been reported to a metadata server
+#: src/gfu-common.c:339
+msgid "Reported to LVFS"
+msgstr "已回報至 LVFS"
+
+#. TRANSLATORS: User has been notified
+#: src/gfu-common.c:343
+msgid "User has been notified"
+msgstr "已通知使用者"
+
+#. TRANSLATORS: Install composite firmware on the parent before the child
+#: src/gfu-common.c:351
+msgid "Install to parent device first"
+msgstr "先安裝上層裝置"
+
+#. TRANSLATORS: Is currently in bootloader mode
+#: src/gfu-common.c:355
+msgid "Is in bootloader mode"
+msgstr "是開機載入器模式"
+
+#. TRANSLATORS: The hardware is waiting to be replugged
+#: src/gfu-common.c:359
+msgid "Hardware is waiting to be replugged"
+msgstr "硬體正在等候重新插入"
+
+#. TRANSLATORS: Ignore validation safety checks when flashing this device
+#: src/gfu-common.c:363
+msgid "Ignore validation safety checks"
+msgstr "忽略核驗安全性檢查"
+
+#. TRANSLATORS: Device update needs to be separately activated
+#: src/gfu-common.c:371
+msgid "Device update needs activation"
+msgstr "裝置更新需要個別啟動"
+
+#. TRANSLATORS: Device will not return after update completes
+#: src/gfu-common.c:379
+msgid "Device will not re-appear after update completes"
+msgstr "裝置在更新完成後不會再次出現"
+
+#. TRANSLATORS: Device supports some form of checksum verification
+#: src/gfu-common.c:383
+msgid "Cryptographic hash verification is available"
+msgstr "密碼學雜湊核驗可以使用"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:391
+msgid "Device stages updates"
+msgstr "裝置分段備待更新"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:395
+msgid "Device can recover flash failures"
+msgstr "裝置可以從閃刷失敗中還原"
+
+#. TRANSLATORS: Device remains usable during update
+#: src/gfu-common.c:399
+msgid "Device is usable for the duration of the update"
+msgstr "裝置在更新期間可以使用"
+
+#. TRANSLATORS: Device does not jump directly to the newest
+#: src/gfu-common.c:403
+msgid "Device installs all intermediate releases"
+msgstr "裝置安裝所有居中的發行版本"
+
+#. TRANSLATORS: Device does not restart and requires a manual action
+#: src/gfu-common.c:407
+msgid "Device skips restart"
+msgstr "裝置略過重新啟動"
+
+#. TRANSLATORS: the stream can be provided by different vendors
+#: src/gfu-common.c:411
+msgid "Device supports switching to a different stream of firmware"
+msgstr "裝置支援切換至不同的韌體流道"
+
+#. TRANSLATORS: it is saved to the users local disk
+#: src/gfu-common.c:415
+msgid "Device firmware will be saved before installing updates"
+msgstr "裝置韌體會在安裝更新前先儲存"
+
+#. TRANSLATORS: on some systems certain devices have to have matching versions,
+#. * e.g. the EFI driver for a given network card cannot be different
+#: src/gfu-common.c:420
+msgid "All devices of the same type will be updated at the same time"
+msgstr "所有相同類型的裝置會同時一併更新"
+
+#. TRANSLATORS: some devices can only be updated to a new semver and cannot
+#. * be downgraded or reinstalled with the sexisting version
+#: src/gfu-common.c:425
+msgid "Only version upgrades are allowed"
+msgstr "僅允許版本升級"
+
+#. TRANSLATORS: the device is currently unreachable, perhaps because it is in a
+#. * lower power state or is out of wireless range
+#: src/gfu-common.c:430
+msgid "Device is currently unreachable"
+msgstr "裝置目前無法觸及"
+
+#. TRANSLATORS: a volume with full-disk-encryption was found on this machine,
+#. * typically a Windows NTFS partition with BitLocker
+#: src/gfu-common.c:435
+msgid "May invalidate secrets used to decrypt volumes"
+msgstr "可能會讓用於解密儲存區的暗記無法通過核驗"
+
+#. TRANSLATORS: the vendor is no longer supporting the device
+#: src/gfu-common.c:439
+msgid "End of life"
+msgstr "生命週期結束"
+
+#. TRANSLATORS: firmware is verified on-device the payload using strong crypto
+#: src/gfu-common.c:443
+msgid "Signed payload"
+msgstr "已簽章的實載階段"
+
+#. TRANSLATORS: firmware payload is unsigned and it is possible to modify it
+#: src/gfu-common.c:447
+msgid "Unsigned payload"
+msgstr "未簽章的實載階段"
+
+#. TRANSLATORS: this device is not actually real
+#: src/gfu-common.c:451
+msgid "Emulated"
+msgstr "模擬"
+
+#. TRANSLATORS: we're saving all USB events for emulation
+#: src/gfu-common.c:455
+msgid "Tagged for emulation"
+msgstr "標記為模擬"
+
+#. TRANSLATORS: device should stay on one firmware version unless the new version
+#. * is explicitly specified
+#: src/gfu-common.c:461
+msgid "Only explicit updates"
+msgstr "僅限更新"
+
+#. TRANSLATORS: daemon is inactive
+#: src/gfu-common.c:560
+msgid "Idle…"
+msgstr "閒置…"
+
+#. TRANSLATORS: decompressing the firmware file
+#: src/gfu-common.c:564
+msgid "Decompressing…"
+msgstr "解壓縮中…"
+
+#. TRANSLATORS: parsing the firmware information
+#: src/gfu-common.c:568
+msgid "Loading…"
+msgstr "載入中…"
+
+#. TRANSLATORS: restarting the device to pick up new F/W
+#: src/gfu-common.c:572
+msgid "Restarting device…"
+msgstr "重新啟動裝置中…"
+
+#. TRANSLATORS: reading from the flash chips
+#: src/gfu-common.c:576
+msgid "Reading…"
+msgstr "讀取中…"
+
+#. TRANSLATORS: writing to the flash chips
+#: src/gfu-common.c:580
+msgid "Writing…"
+msgstr "寫入中…"
+
+#. TRANSLATORS: erasing contents of the flash chips
+#: src/gfu-common.c:584
+msgid "Erasing…"
+msgstr "抹除中…"
+
+#. TRANSLATORS: verifying we wrote the firmware correctly
+#: src/gfu-common.c:588
+msgid "Verifying…"
+msgstr "核驗中…"
+
+#. TRANSLATORS: scheduing an update to be done on the next boot
+#: src/gfu-common.c:592
+msgid "Scheduling…"
+msgstr "排程中…"
+
+#. TRANSLATORS: downloading from a remote server
+#: src/gfu-common.c:596
+msgid "Downloading…"
+msgstr "下載中…"
+
+#. TRANSLATORS: waiting for user to authenticate
+#: src/gfu-common.c:600
+msgid "Authenticating…"
+msgstr "核對中…"
+
+#. TRANSLATORS: waiting for device to do something
+#: src/gfu-common.c:604
+msgid "Waiting…"
+msgstr "等待中…"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:608
+msgid "Shutting down…"
+msgstr "關機中…"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:613
+msgid "Waiting for user…"
+msgstr "等待使用者中…"
+
+#. TRANSLATORS: the attestation failed
+#: src/gfu-main.c:248
+msgid "Not OK"
+msgstr "未通過"
+
+#. TRANSLATORS: the checksum verified
+#: src/gfu-main.c:253 src/gfu-main.c:1133
+msgid "OK"
+msgstr "通過"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:264
+msgid "System power is too low to perform the update"
+msgstr "系統電量過低，無法執行更新"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:268
+#, c-format
+msgid "System power is too low to perform the update (%u%%, requires %u%%)"
+msgstr "系統電量過低，無法執行更新（%u%%，要求為 %u%%）"
+
+#. TRANSLATORS: for example, a Bluetooth mouse that is in powersave mode
+#: src/gfu-main.c:274
+msgid "Device is unreachable, or out of wireless range"
+msgstr "裝置無法觸及，或是超出無線收訊範圍"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:281
+msgid "Device battery power is too low"
+msgstr "裝置電池電量過低"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:284
+#, c-format
+msgid "Device battery power is too low (%u%%, requires %u%%)"
+msgstr "裝置電池電量過低（%u%%，要求為 %u%%）"
+
+#. TRANSLATORS: usually this is when we're waiting for a reboot
+#: src/gfu-main.c:290
+msgid "Device is waiting for the update to be applied"
+msgstr "裝置正在等候更新套用"
+
+#. TRANSLATORS: as in, wired mains power for a laptop
+#: src/gfu-main.c:294
+msgid "Device requires AC power to be connected"
+msgstr "裝置要求連接 AC 電源"
+
+#. TRANSLATORS: lid means "laptop top cover"
+#: src/gfu-main.c:298
+msgid "Device cannot be used while the lid is closed"
+msgstr "裝置在上蓋關閉時無法使用"
+
+#. TRANSLATORS: device cannot be interrupted, for instance taking a phone call
+#: src/gfu-main.c:303
+msgid "Device is in use"
+msgstr "裝置正在使用中"
+
+#. TRANSLATORS: device cannot be interrupted, for instance taking a phone call
+#: src/gfu-main.c:309
+msgid "Device cannot be used while there are no displays plugged in"
+msgstr "裝置在沒有接上顯示器時無法使用"
+
+#. TRANSLATORS: the hw IDs the device defines,
+#. * e.g. USB:0x1234
+#: src/gfu-main.c:408 src/gfu-main.ui:230
+msgid "Vendor ID"
+msgid_plural "Vendor IDs"
+msgstr[0] "廠商 ID"
+
+#. TRANSLATORS: the checksum state was unknown
+#: src/gfu-main.c:438
+msgid "Unknown"
+msgstr "未知"
+
+#. TRANSLATORS: error in shutting down the system
+#: src/gfu-main.c:515
+msgid "Failed to shutdown device"
+msgstr "無法將裝置關機"
+
+#: src/gfu-main.c:516
+msgid "A manual shutdown is required."
+msgstr "必須手動關機。"
+
+#. TRANSLATORS: error in rebooting down the system
+#: src/gfu-main.c:531
+msgid "Failed to reboot device"
+msgstr "無法將裝置重新開機"
+
+#: src/gfu-main.c:532
+msgid "A manual reboot is required."
+msgstr "必須手動重新開機。"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:551
+msgid "Failed to load list of remotes"
+msgstr "無法載入遠端的清單"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:660
+msgid "Failed to load device list"
+msgstr "無法載入裝置清單"
+
+#. TRANSLATORS: no devices supporting firmware updates were found
+#: src/gfu-main.c:685
+msgid "No supported devices were found…"
+msgstr "找不到支援的裝置…"
+
+#. TRANSLATORS: the list of available firmware failed to be updated
+#: src/gfu-main.c:787
+msgid "Failed to refresh metadata"
+msgstr "無法重新整理中介資料"
+
+#. TRANSLATORS: the LVFS remote was not found on the system
+#: src/gfu-main.c:802
+msgid "Failed to find LVFS"
+msgstr "找不到 LVFS"
+
+#. TRANSLATORS: the LVFS remote could not be enabled
+#: src/gfu-main.c:829
+msgid "Failed to enable LVFS"
+msgstr "無法啟用 LVFS"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:870
+msgid "Failed to get remotes list"
+msgstr "無法取得遠端清單"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:921
+msgid "To complete the update further action is required"
+msgstr "如要完成更新，必須進一步動作"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:924
+msgid "Action is required"
+msgstr "必須採取動作"
+
+#. TRANSLATORS: the firmware install failed for an unspecified reason
+#: src/gfu-main.c:1025
+msgid "Failed to install firmware"
+msgstr "無法安裝韌體"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1049
+msgid "The update requires the system to shutdown to complete."
+msgstr "更新要求系統必須關機才能完成。"
+
+#: src/gfu-main.c:1052 src/gfu-main.c:1738
+msgid "Shutdown now?"
+msgstr "現在關機？"
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1065
+msgid "The update requires a reboot to complete."
+msgstr "更新必須重新開機才能完成。"
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1068 src/gfu-main.c:1756
+msgid "Restart now?"
+msgstr "現在重新啟動？"
+
+#. TRANSLATORS: inform the user that the
+#. installation was successful onto the device
+#: src/gfu-main.c:1082
+msgid "Installation successful"
+msgstr "安裝成功"
+
+#. TRANSLATORS: dialog text, %1 is a
+#. * version number, %2 is a device name
+#: src/gfu-main.c:1086
+#, c-format
+msgid "Installed firmware version %s on %s."
+msgstr "已安裝韌體版本 %s 到 %s。"
+
+#. TRANSLATORS: e.g. bitlocker
+#: src/gfu-main.c:1132
+msgid "Full disk encryption detected"
+msgstr "已偵測到完整磁碟加密"
+
+#. TRANSLATORS: buttons
+#: src/gfu-main.c:1134 src/gfu-main.c:1178
+msgid "Cancel"
+msgstr "取消"
+
+#. TRANSLATORS: the platform secret is stored in the PCRx registers on the TPM
+#: src/gfu-main.c:1140
+msgid ""
+"Some of the platform secrets may be invalidated when updating this firmware."
+msgstr "有些平臺暗記可能在更新此韌體時無法通過核驗。"
+
+#. TRANSLATORS: 'recovery key' here refers to a code, rather than a metal thing
+#: src/gfu-main.c:1142
+msgid "Please ensure you have the volume recovery key before continuing."
+msgstr "在繼續之前，請先確認您有儲存區還原金鑰。"
+
+#. TRANSLATORS: title, %1 is the firmware vendor, %2 is the
+#. device vendor name
+#: src/gfu-main.c:1161
+#, c-format
+msgid "The firmware from %s is not supplied by %s"
+msgstr "韌體來自 %s，並非由 %s 提供"
+
+#. TRANSLATORS: branch switch title
+#: src/gfu-main.c:1166
+msgid "The firmware is not supplied by the vendor"
+msgstr "韌體並非由供應商提供"
+
+#. TRANSLATORS: button text to switch to another stream of firmware
+#: src/gfu-main.c:1180
+msgid "Switch Branch"
+msgstr "切換分支"
+
+#. TRANSLATORS: %1 is the device vendor name
+#: src/gfu-main.c:1185
+#, c-format
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with %s."
+msgstr ""
+"您的硬體可能在使用此韌體之後損毀，此外安裝該發行版可能會讓 %s 的保固失效。"
+
+#. TRANSLATORS: the vendor is unknown
+#: src/gfu-main.c:1192
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with the vendor."
+msgstr ""
+"您的硬體可能在使用此韌體之後損毀，此外安裝該發行版可能會讓廠商的保固失效。"
+
+#. TRANSLATORS: should the branch be changed
+#: src/gfu-main.c:1199
+msgid "You must understand the consequences of changing the firmware branch."
+msgstr "您必須明白變更韌體分支的可能後果。"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1219
+#, c-format
+msgid "Reinstall %s firmware version %s?"
+msgstr "重新安裝 %s 韌體版本 %s？"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1222
+#, c-format
+msgid "Upgrade %s firmware version %s?"
+msgstr "升級 %s 韌體版本 %s？"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1225
+#, c-format
+msgid "Downgrade %s firmware version %s?"
+msgstr "降級 %s 韌體版本 %s？"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1228
+#, c-format
+msgid "Install %s firmware version %s?"
+msgstr "安裝 %s 韌體版本 %s？"
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1239
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#. TRANSLATORS: button text: install the same version again
+#: src/gfu-main.c:1244
+msgid "_Reinstall"
+msgstr "重新安裝(_R)"
+
+#. TRANSLATORS: button text, move from old -> new
+#: src/gfu-main.c:1250
+msgid "_Upgrade"
+msgstr "升級(_U)"
+
+#. TRANSLATORS: button text, move from new -> old
+#: src/gfu-main.c:1254
+msgid "_Downgrade"
+msgstr "降級(_D)"
+
+#. TRANSLATORS: the device can be used normallly
+#: src/gfu-main.c:1262
+msgid "The device will remain usable for the duration of the update"
+msgstr "裝置在更新期間仍然可以使用"
+
+#. TRANSLATORS: the device will be non-fuctional for a while
+#: src/gfu-main.c:1268
+msgid "The device will be unusable while the update is installing"
+msgstr "裝置在安裝更新期間無法使用"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1336
+msgid "Failed to verify firmware"
+msgstr "無法核驗韌體"
+
+#. TRANSLATORS: inform the user that the
+#. firmware verification was successful
+#: src/gfu-main.c:1347
+msgid "Verification succeeded"
+msgstr "核驗成功"
+
+#. TRANSLATORS: firmware is cryptographically identical
+#: src/gfu-main.c:1351
+#, c-format
+msgid "%s firmware checksums matched"
+msgstr "%s 韌體校驗碼相符"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1383
+msgid "Verify firmware checksums?"
+msgstr "核驗韌體校驗碼？"
+
+#. TRANSLATORS: device will "go away" and then "come back"
+#: src/gfu-main.c:1388
+msgid "The device may be unusable during this action"
+msgstr "裝置在此動作期間可能無法使用"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1401
+msgid "Failed to update checksums"
+msgstr "無法更新校驗碼"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1432
+msgid "Update cryptographic hash"
+msgstr "更新密碼學雜湊"
+
+#. TRANSLATORS: save what we have now as "valid"
+#: src/gfu-main.c:1437
+msgid "Record current device cryptographic hashes as verified?"
+msgstr "將目前裝置的密碼學雜湊記錄為已核驗？"
+
+#. TRANSLATORS: command description
+#: src/gfu-main.c:1465 src/gfu-main.c:1963
+msgid "Lingmo Firmware"
+msgstr "Lingmo 韌體"
+
+#. TRANSLATORS: you can put your name here :)
+#: src/gfu-main.c:1476
+msgid "translator-credits"
+msgstr "Cheng-Chia Tseng <zerngjia@gmail.com>, 2024."
+
+#: src/gfu-main.c:1530
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "分類"
+
+#. title: hashes of the file payload
+#: src/gfu-main.c:1549 src/gfu-main.ui:680
+msgid "Checksum"
+msgid_plural "Checksums"
+msgstr[0] "校驗碼"
+
+#. TRANSLATORS: list of security issues, e.g. CVEs
+#: src/gfu-main.c:1567
+msgid "Fixed Issue"
+msgid_plural "Fixed Issues"
+msgstr[0] "已修正議題"
+
+#. TRANSLATORS: as in non-free
+#: src/gfu-main.c:1605
+msgid "Proprietary"
+msgstr "專有"
+
+#. TRANSLATORS: maybe try Linux?
+#: src/gfu-main.c:1697 src/gfu-main.c:1800
+msgid "The fwupd service is not available for your OS."
+msgstr "fwupd 服務在您的作業系統上無法使用。"
+
+#. TRANSLATORS: unlock means to make the device functional in another mode
+#: src/gfu-main.c:1721
+msgid "Failed to unlock device"
+msgstr "無法解除裝置鎖定"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1735
+msgid "Unlocking a device requires the system to shutdown to complete."
+msgstr "要解除裝置鎖定，必須完成系統關機。"
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1752
+msgid "Unlocking a device requires a reboot to complete."
+msgstr "要解除裝置鎖定，必須完成重新開機。"
+
+#. TRANSLATORS: command line option
+#: src/gfu-main.c:1952
+msgid "Show extra debugging information"
+msgstr "顯示額外除錯資訊"
+
+#. TRANSLATORS: the user has sausages for fingers
+#: src/gfu-main.c:1967
+msgid "Failed to parse command line options"
+msgstr "解析命令列選項失敗"
+
+#. window title
+#: src/gfu-main.ui:50
+msgid "Devices"
+msgstr "裝置"
+
+#: src/gfu-main.ui:57
+msgid "Main Menu"
+msgstr "主選單"
+
+#. LVFS is an online firmware provider
+#: src/gfu-main.ui:112
+msgid "LVFS is not enabled"
+msgstr "LVFS 未啟用"
+
+#. we need metadata so we know where to get the firmware from
+#: src/gfu-main.ui:122
+msgid ""
+"Firmware metadata can be obtained from the Linux Vendor Firmware Service at "
+"no cost."
+msgstr "韌體中介資料可以透過 Linux 供應商韌體服務 (LVFS) 無償取得。"
+
+#. button text
+#: src/gfu-main.ui:133
+msgid "Enable"
+msgstr "啟用"
+
+#. group title
+#: src/gfu-main.ui:164
+msgid "Device Properties"
+msgstr "裝置屬性"
+
+#. title: device version
+#: src/gfu-main.ui:169
+msgid "Current Version"
+msgstr "目前版本"
+
+#. title: if the device is locked
+#: src/gfu-main.ui:179
+msgid "Lock Status"
+msgstr "鎖定狀態"
+
+#. title: the lowest version we can update to
+#: src/gfu-main.ui:190
+msgid "Minimum Version"
+msgstr "最小版本"
+
+#. title: the version of the [read only] bootloader
+#: src/gfu-main.ui:200
+msgid "Bootloader Version"
+msgstr "開機載入器版本"
+
+#. title: device manufacturer
+#. title: manufacturer that supplied the file
+#: src/gfu-main.ui:210 src/gfu-main.ui:538
+msgid "Vendor"
+msgstr "供應商"
+
+#. title: firmware stream, e.g. coreboot
+#: src/gfu-main.ui:220
+msgid "Branch"
+msgstr "分支"
+
+#. title: ime in seconds to update
+#. title: time to deploy this specific update
+#: src/gfu-main.ui:240 src/gfu-main.ui:640
+msgid "Install Duration"
+msgstr "安裝期間"
+
+#. title: how many times the device can be updated
+#: src/gfu-main.ui:250
+msgid "Flashes Left"
+msgstr "閃刷剩餘次數"
+
+#. title: the error text from las time
+#: src/gfu-main.ui:260
+msgid "Update Error"
+msgstr "更新錯誤"
+
+#. title: problems why we can't use the device
+#: src/gfu-main.ui:276
+msgid "Problems"
+msgstr "問題"
+
+#. title: device unique ID
+#: src/gfu-main.ui:292
+msgid "Serial Number"
+msgstr "序號"
+
+#. title: if we can verify the firmware
+#: src/gfu-main.ui:302
+msgid "Attestation"
+msgstr "核實"
+
+#. button: save as trusted
+#: src/gfu-main.ui:319
+msgid "_Store…"
+msgstr "儲存(_S)…"
+
+#. button: verify the checksum
+#: src/gfu-main.ui:333
+msgid "_Verify"
+msgstr "核驗(_V)"
+
+#: src/gfu-main.ui:345
+msgid "Hardware Identification"
+msgstr "硬體識別"
+
+#. title: Information about the release, e.g. is-signed
+#: src/gfu-main.ui:358 src/gfu-main.ui:630
+msgid "Flags"
+msgstr "旗標"
+
+#. title: there is firmware we can install
+#: src/gfu-main.ui:375
+msgid "Available Releases"
+msgstr "可用的發行版"
+
+#. title: there are no releases to install
+#: src/gfu-main.ui:391
+msgid "No Releases Available"
+msgstr "無發行版可用"
+
+#. title: when starting
+#: src/gfu-main.ui:404
+msgid "Loading"
+msgstr "載入中"
+
+#. more information about when we're loading
+#: src/gfu-main.ui:420
+msgid "Loading devices…"
+msgstr "載入裝置中…"
+
+#. title: no devices could be found we can update
+#: src/gfu-main.ui:436
+msgid "No Devices"
+msgstr "無裝置"
+
+#. title: one line
+#: src/gfu-main.ui:505
+msgid "Summary"
+msgstr "摘要"
+
+#. title: multiple lines of prose
+#: src/gfu-main.ui:520
+msgid "Description"
+msgstr "描述"
+
+#. title: what we are downloading
+#: src/gfu-main.ui:548
+msgid "Filename"
+msgstr "檔案名稱"
+
+#. title: size in bytes
+#: src/gfu-main.ui:566
+msgid "Size"
+msgstr "大小"
+
+#. title: method of doing the update, e.g. DFU
+#: src/gfu-main.ui:576
+msgid "Protocol"
+msgstr "協定"
+
+#. title: the nice name of the firmware remote
+#: src/gfu-main.ui:589
+msgid "Remote ID"
+msgstr "遠端 ID"
+
+#. title: the ID to identify the stream
+#: src/gfu-main.ui:602
+msgid "AppStream ID"
+msgstr "AppStream ID"
+
+#. title, e.g. Nonfree, GPLv2+ etc
+#: src/gfu-main.ui:620
+msgid "License"
+msgstr "授權條款"
+
+#. title: any message we show the user after the update is done
+#: src/gfu-main.ui:650
+msgid "Update Message"
+msgstr "更新訊息"
+
+#. title: the type of firmware, e.g. X-ManagementEngine
+#: src/gfu-main.ui:660
+msgid "Categories"
+msgstr "分類"
+
+#. title: list of security issues, e.g. CVE numbers
+#: src/gfu-main.ui:670
+msgid "Issues"
+msgstr "議題"
+
+#. menu-text: download a new copy of the firmware metadata
+#: src/gfu-main.ui:711
+msgid "_Refresh Metadata"
+msgstr "重新整理中介資料(_R)"
+
+#. menu-text: select and install a local file
+#: src/gfu-main.ui:715
+msgid "_Install Firmware Archive"
+msgstr "安裝韌體封存檔(_I)"
+
+#: src/gfu-main.ui:719
+msgid "_Keyboard Shortcuts"
+msgstr "鍵盤快捷鍵(_K)"
+
+#. menu-text: shows information about this ap
+#: src/gfu-main.ui:723
+msgid "_About"
+msgstr "關於(_A)"
+
+#: src/help-overlay.ui:12
+msgid "General"
+msgstr "一般"
+
+#: src/help-overlay.ui:17
+msgid "Refresh Metadata"
+msgstr "重新整理中介資料"
+
+#: src/help-overlay.ui:23
+msgid "Install Firmware Archive"
+msgstr "安裝韌體封存檔"
+
+#: src/help-overlay.ui:29
+msgid "Open Main Menu"
+msgstr "開啟主選單"
+
+#: src/help-overlay.ui:35
+msgid "Show Keyboard Shortcuts"
+msgstr "顯示鍵盤快捷鍵"
+
+#: src/help-overlay.ui:41
+msgid "Close Window"
+msgstr "關閉視窗"
+
+#: src/help-overlay.ui:47
+msgid "Quit"
+msgstr "退出"
+
+#. TRANSLATORS: update severity
+#: src/gfu-release-row.c:42
+msgid "Critical"
+msgstr "重大"
+
+#. TRANSLATORS: update severity
+#: src/gfu-release-row.c:49
+msgid "High Priority"
+msgstr "高度優先"
+
+#. TRANSLATORS: upgrading the firmware
+#: src/gfu-release-row.c:65
+msgid "_Upgrade…"
+msgstr "升級(_U)…"
+
+#. TRANSLATORS: downgrading the firmware
+#: src/gfu-release-row.c:68
+msgid "_Downgrade…"
+msgstr "降級(_D)…"
+
+#. TRANSLATORS: installing the same firmware that is
+#. * currently installed
+#: src/gfu-release-row.c:72
+msgid "_Reinstall…"
+msgstr "重新安裝(_R)…"
+
+#. TRANSLATORS: problems are things the user has to fix, e.g. low battery
+#: src/gfu-release-row.c:83
+msgid "Cannot perform action as the device has a problem"
+msgstr "無法執行動作因為裝置有點問題"

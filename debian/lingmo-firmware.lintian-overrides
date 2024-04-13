@@ -1,0 +1,3 @@
+# Use wrong-section-according-to-package-name override because
+# package doesn't belong to kernel section
+wrong-section-according-to-package-name

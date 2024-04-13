@@ -1,0 +1,1053 @@
+# Hungarian translation for Lingmo Firmware.
+# Copyright (C) 2023, 2024 Free Software Foundation, Inc.
+# This file is distributed under the same license as the lingmo-firmware package.
+#
+# Balázs Meskó <mesko.balazs at fsf dot hu>, 2023.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2023, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: lingmo-firmware master\n"
+"Report-Msgid-Bugs-To: https://github.com/LingmoOS/lingmo-firmware/issues\n"
+"POT-Creation-Date: 2023-11-29 08:31+0000\n"
+"PO-Revision-Date: 2024-02-19 23:46+0100\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
+"Language-Team: Hungarian <openscope at fsf dot hu>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 23.08.4\n"
+
+#. TRANSLATORS: the application name
+#. window title
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:8
+#: data/org.lingmo.Firmware.desktop.in:3 src/gfu-main.ui:84
+msgid "Firmware"
+msgstr "Belső vezérlőprogram"
+
+#. TRANSLATORS: one-line description for the app
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:10
+#: data/org.lingmo.Firmware.desktop.in:4
+msgid "Install firmware on devices"
+msgstr "Belső vezérlőprogram telepítése az eszközökre"
+
+#. TRANSLATORS: AppData description marketing paragraph
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:13
+msgid "Update, reinstall and downgrade firmware on devices supported by fwupd."
+msgstr ""
+"A belső vezérlőprogram frissítése, újratelepítése és korábbi verziójának "
+"telepítése az fwupd által támogatott eszközökön."
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:20
+msgid "Devices panel"
+msgstr "Eszközök panel"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:24
+msgid "Releases panel"
+msgstr "Kiadások panel"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:28
+msgid "Richard Hughes"
+msgstr "Richard Hughes"
+
+#. TRANSLATORS: these are desktop keywords - remember the trailing ';' :)
+#: data/org.lingmo.Firmware.desktop.in:12
+msgid "Firmware;"
+msgstr "Belső vezérlőprogram;Firmware;"
+
+#. TRANSLATORS: We verified the payload against the server
+#: src/gfu-common.c:144
+msgid "Trusted payload"
+msgstr "Megbízható hasznos teher"
+
+#. TRANSLATORS: We verified the meatdata against the server
+#: src/gfu-common.c:148
+msgid "Trusted metadata"
+msgstr "Megbízható metaadatok"
+
+#. TRANSLATORS: version is newer
+#: src/gfu-common.c:152
+msgid "Is upgrade"
+msgstr "Frissítés"
+
+#. TRANSLATORS: version is older
+#: src/gfu-common.c:156
+msgid "Is downgrade"
+msgstr "Régebbi verzió"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:160
+msgid "Blocked version"
+msgstr "Tiltott verzió"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:164
+msgid "Not approved"
+msgstr "Nincs jóváhagyva"
+
+#. TRANSLATORS: is not the main firmware stream
+#: src/gfu-common.c:168
+msgid "Alternate branch"
+msgstr "Alternatív ág"
+
+#. TRANSLATORS: is not supported by the vendor
+#: src/gfu-common.c:172
+msgid "Community supported"
+msgstr "Közösség által támogatott"
+
+#. TRANSLATORS: the QA team is someone we trust
+#: src/gfu-common.c:177
+msgid "Report is trusted"
+msgstr "A jelentés megbízható"
+
+#. TRANSLATORS: Device cannot be removed easily
+#: src/gfu-common.c:303
+msgid "Internal device"
+msgstr "Belső eszköz"
+
+#. TRANSLATORS: Device is updatable in this or any other mode
+#: src/gfu-common.c:307
+msgid "Updatable"
+msgstr "Frissíthető"
+
+#. TRANSLATORS: Update can only be done from offline mode
+#: src/gfu-common.c:311
+msgid "Update requires a reboot"
+msgstr "A frissítés újraindítást igényel"
+
+#. TRANSLATORS: Must be plugged in to an outlet
+#: src/gfu-common.c:315
+msgid "System requires external power source"
+msgstr "A rendszer külső energiaforrást igényel"
+
+#. TRANSLATORS: Is locked and can be unlocked
+#: src/gfu-common.c:319
+msgid "Device is locked"
+msgstr "Az eszköz zárolva van"
+
+#. TRANSLATORS: Is found in current metadata
+#: src/gfu-common.c:323
+msgid "Supported on LVFS"
+msgstr "Támogatva az LVFS-en"
+
+#. TRANSLATORS: Requires a bootloader mode to be manually enabled by the user
+#: src/gfu-common.c:327
+msgid "Requires a bootloader"
+msgstr "Rendszerbetöltőt igényel"
+
+#. TRANSLATORS: Requires a reboot to apply firmware or to reload hardware
+#: src/gfu-common.c:331
+msgid "Needs a reboot after installation"
+msgstr "Újraindítást igényel a telepítés után"
+
+#. TRANSLATORS: Requires system shutdown to apply firmware
+#: src/gfu-common.c:335
+msgid "Needs shutdown after installation"
+msgstr "Leállítást igényel a telepítés után"
+
+#. TRANSLATORS: Has been reported to a metadata server
+#: src/gfu-common.c:339
+msgid "Reported to LVFS"
+msgstr "Jelentve az LVFS-re"
+
+#. TRANSLATORS: User has been notified
+#: src/gfu-common.c:343
+msgid "User has been notified"
+msgstr "A felhasználó értesítve"
+
+#. TRANSLATORS: Install composite firmware on the parent before the child
+#: src/gfu-common.c:351
+msgid "Install to parent device first"
+msgstr "Telepítés először a szülő eszközre"
+
+#. TRANSLATORS: Is currently in bootloader mode
+#: src/gfu-common.c:355
+msgid "Is in bootloader mode"
+msgstr "Rendszerbetöltő módban van"
+
+#. TRANSLATORS: The hardware is waiting to be replugged
+#: src/gfu-common.c:359
+msgid "Hardware is waiting to be replugged"
+msgstr "A hardver újracsatlakoztatásra vár"
+
+#. TRANSLATORS: Ignore validation safety checks when flashing this device
+#: src/gfu-common.c:363
+msgid "Ignore validation safety checks"
+msgstr "Biztonsági ellenőrzések mellőzése"
+
+#. TRANSLATORS: Device update needs to be separately activated
+#: src/gfu-common.c:375
+msgid "Device update needs activation"
+msgstr "Az eszközfrissítés aktiválást igényel"
+
+#. TRANSLATORS: Device will not return after update completes
+#: src/gfu-common.c:391
+msgid "Device will not re-appear after update completes"
+msgstr "Az eszköz nem fog újra megjelenni a frissítés befejezése után"
+
+#. TRANSLATORS: Device supports some form of checksum verification
+#: src/gfu-common.c:395
+msgid "Cryptographic hash verification is available"
+msgstr "Kriptográfiaikivonat-ellenőrzés érhető el"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:403
+msgid "Device stages updates"
+msgstr "Az eszköz szakaszosan frissít"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:407
+msgid "Device can recover flash failures"
+msgstr "Az eszköz képes helyreállítani a beírási hibákat"
+
+#. TRANSLATORS: Device remains usable during update
+#: src/gfu-common.c:411
+msgid "Device is usable for the duration of the update"
+msgstr "Az eszköz használható a frissítés ideje alatt"
+
+#. TRANSLATORS: Device does not jump directly to the newest
+#: src/gfu-common.c:415
+msgid "Device installs all intermediate releases"
+msgstr "Az eszköz telepíti az összes köztes kiadást"
+
+#. TRANSLATORS: Device does not restart and requires a manual action
+#: src/gfu-common.c:419
+msgid "Device skips restart"
+msgstr "Az eszköz kihagyja az újraindítást"
+
+#. TRANSLATORS: the stream can be provided by different vendors
+#: src/gfu-common.c:423
+msgid "Device supports switching to a different stream of firmware"
+msgstr ""
+"Az eszköz támogatja a belső vezérlőprogram különböző adatfolyamaira váltását"
+
+#. TRANSLATORS: it is saved to the users local disk
+#: src/gfu-common.c:427
+msgid "Device firmware will be saved before installing updates"
+msgstr ""
+"Az eszköz belső vezérlőprogramja mentésre kerül a frissítések telepítése "
+"előtt"
+
+#. TRANSLATORS: on some systems certain devices have to have matching versions,
+#. * e.g. the EFI driver for a given network card cannot be different
+#: src/gfu-common.c:432
+msgid "All devices of the same type will be updated at the same time"
+msgstr "Az összes azonos típusú eszköz egyszerre lesz frissítve"
+
+#. TRANSLATORS: some devices can only be updated to a new semver and cannot
+#. * be downgraded or reinstalled with the sexisting version
+#: src/gfu-common.c:437
+msgid "Only version upgrades are allowed"
+msgstr "Csak verziófrissítések engedélyezettek"
+
+#. TRANSLATORS: the device is currently unreachable, perhaps because it is in a
+#. * lower power state or is out of wireless range
+#: src/gfu-common.c:442
+msgid "Device is currently unreachable"
+msgstr "Az eszköz jelenleg elérhetetlen"
+
+#. TRANSLATORS: a volume with full-disk-encryption was found on this machine,
+#. * typically a Windows NTFS partition with BitLocker
+#: src/gfu-common.c:447
+msgid "May invalidate secrets used to decrypt volumes"
+msgstr "Érvénytelenítheti a kötetek visszafejtéséhez használt titkokat"
+
+#. TRANSLATORS: the vendor is no longer supporting the device
+#: src/gfu-common.c:451
+msgid "End of life"
+msgstr "Életciklus vége"
+
+#. TRANSLATORS: firmware is verified on-device the payload using strong crypto
+#: src/gfu-common.c:455
+msgid "Signed payload"
+msgstr "Aláírt hasznos teher"
+
+#. TRANSLATORS: firmware payload is unsigned and it is possible to modify it
+#: src/gfu-common.c:459
+msgid "Unsigned payload"
+msgstr "Aláíratlan hasznos teher"
+
+#. TRANSLATORS: this device is not actually real
+#: src/gfu-common.c:463
+msgid "Emulated"
+msgstr "Emulált"
+
+#. TRANSLATORS: we're saving all USB events for emulation
+#: src/gfu-common.c:467
+msgid "Tagged for emulation"
+msgstr "Megjelölve emulációhoz"
+
+#. TRANSLATORS: device should stay on one firmware version unless the new version
+#. * is explicitly specified
+#: src/gfu-common.c:473
+msgid "Only explicit updates"
+msgstr "Csak kifejezett frissítések"
+
+#. TRANSLATORS: daemon is inactive
+#: src/gfu-common.c:576
+msgid "Idle…"
+msgstr "Üresjárat…"
+
+#. TRANSLATORS: decompressing the firmware file
+#: src/gfu-common.c:580
+msgid "Decompressing…"
+msgstr "Kibontás…"
+
+#. TRANSLATORS: parsing the firmware information
+#: src/gfu-common.c:584
+msgid "Loading…"
+msgstr "Betöltés…"
+
+#. TRANSLATORS: restarting the device to pick up new F/W
+#: src/gfu-common.c:588
+msgid "Restarting device…"
+msgstr "Eszköz újraindítása…"
+
+#. TRANSLATORS: reading from the flash chips
+#: src/gfu-common.c:592
+msgid "Reading…"
+msgstr "Olvasás…"
+
+#. TRANSLATORS: writing to the flash chips
+#: src/gfu-common.c:596
+msgid "Writing…"
+msgstr "Írás…"
+
+#. TRANSLATORS: erasing contents of the flash chips
+#: src/gfu-common.c:600
+msgid "Erasing…"
+msgstr "Törlés…"
+
+#. TRANSLATORS: verifying we wrote the firmware correctly
+#: src/gfu-common.c:604
+msgid "Verifying…"
+msgstr "Ellenőrzés…"
+
+#. TRANSLATORS: scheduing an update to be done on the next boot
+#: src/gfu-common.c:608
+msgid "Scheduling…"
+msgstr "Ütemezés…"
+
+#. TRANSLATORS: downloading from a remote server
+#: src/gfu-common.c:612
+msgid "Downloading…"
+msgstr "Letöltés…"
+
+#. TRANSLATORS: waiting for user to authenticate
+#: src/gfu-common.c:616
+msgid "Authenticating…"
+msgstr "Hitelesítés…"
+
+#. TRANSLATORS: waiting for device to do something
+#: src/gfu-common.c:620
+msgid "Waiting…"
+msgstr "Várakozás…"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:624
+msgid "Shutting down…"
+msgstr "Leállítás…"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:629
+#| msgid "Waiting…"
+msgid "Waiting for user…"
+msgstr "Várakozás a felhasználóra…"
+
+#. TRANSLATORS: the attestation failed
+#: src/gfu-main.c:248
+msgid "Not OK"
+msgstr "Nincs rendben"
+
+#. TRANSLATORS: the checksum verified
+#: src/gfu-main.c:253 src/gfu-main.c:1084
+msgid "OK"
+msgstr "OK"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:264
+msgid "System power is too low to perform the update"
+msgstr "A rendszer akkumulátorszintje túl alacsony a frissítés végrehajtásához"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:268
+#, c-format
+msgid "System power is too low to perform the update (%u%%, requires %u%%)"
+msgstr ""
+"A rendszer akkumulátorszintje túl alacsony a frissítés végrehajtásához "
+"(%u%%, de %u%% szükséges)"
+
+#. TRANSLATORS: for example, a Bluetooth mouse that is in powersave mode
+#: src/gfu-main.c:274
+msgid "Device is unreachable, or out of wireless range"
+msgstr "Az eszköz elérhetetlen vagy a vezeték nélküli hatótávolságon kívül van"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:281
+msgid "Device battery power is too low"
+msgstr "Az eszköz akkumulátorszintje túl alacsony"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:284
+#, c-format
+msgid "Device battery power is too low (%u%%, requires %u%%)"
+msgstr "Az eszköz akkumulátorszintje túl alacsony (%u%%, de %u%% szükséges)"
+
+#. TRANSLATORS: usually this is when we're waiting for a reboot
+#: src/gfu-main.c:290
+msgid "Device is waiting for the update to be applied"
+msgstr "Az eszköz a frissítés alkalmazására vár"
+
+#. TRANSLATORS: as in, wired mains power for a laptop
+#: src/gfu-main.c:294
+msgid "Device requires AC power to be connected"
+msgstr "Az eszközhöz elektromos áram csatlakoztatása szükséges"
+
+#. TRANSLATORS: lid means "laptop top cover"
+#: src/gfu-main.c:298
+msgid "Device cannot be used while the lid is closed"
+msgstr "Az eszköz nem használható, amíg a fedél le van csukva"
+
+#. TRANSLATORS: device cannot be interrupted, for instance taking a phone call
+#: src/gfu-main.c:303
+msgid "Device is in use"
+msgstr "Az eszköz használatban van"
+
+#. TRANSLATORS: device cannot be interrupted, for instance taking a phone call
+#: src/gfu-main.c:309
+#| msgid "Device cannot be used while the lid is closed"
+msgid "Device cannot be used while there are no displays plugged in"
+msgstr "Az eszköz nem használható, amíg nincsenek kijelzők csatlakoztatva"
+
+#. TRANSLATORS: the hw IDs the device defines,
+#. * e.g. USB:0x1234
+#: src/gfu-main.c:408 src/gfu-main.ui:230
+msgid "Vendor ID"
+msgid_plural "Vendor IDs"
+msgstr[0] "Gyártóazonosító"
+msgstr[1] "Gyártóazonosítók"
+
+#. TRANSLATORS: the checksum state was unknown
+#: src/gfu-main.c:438
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#. TRANSLATORS: error in shutting down the system
+#: src/gfu-main.c:515
+msgid "Failed to shutdown device"
+msgstr "Nem sikerült leállítani az eszközt"
+
+#: src/gfu-main.c:516
+msgid "A manual shutdown is required."
+msgstr "Kézi leállítás szükséges."
+
+#. TRANSLATORS: error in rebooting down the system
+#: src/gfu-main.c:531
+msgid "Failed to reboot device"
+msgstr "Nem sikerült újraindítani az eszközt"
+
+#: src/gfu-main.c:532
+msgid "A manual reboot is required."
+msgstr "Kézi újraindítás szükséges."
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:551
+msgid "Failed to load list of remotes"
+msgstr "Nem sikerült betölteni a távoliak listáját"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:645
+msgid "Failed to load device list"
+msgstr "Nem sikerült betölteni az eszközlistát"
+
+#. TRANSLATORS: no devices supporting firmware updates were found
+#: src/gfu-main.c:670
+msgid "No supported devices were found…"
+msgstr "Nem találhatók támogatott eszközök…"
+
+#. TRANSLATORS: the list of available firmware failed to be updated
+#: src/gfu-main.c:772
+msgid "Failed to refresh metadata"
+msgstr "Nem sikerült frissíteni a metaadatokat"
+
+#. TRANSLATORS: the LVFS remote was not found on the system
+#: src/gfu-main.c:787
+msgid "Failed to find LVFS"
+msgstr "Nem sikerült megtalálni az LVFS-t"
+
+#. TRANSLATORS: the LVFS remote could not be enabled
+#: src/gfu-main.c:805
+msgid "Failed to enable LVFS"
+msgstr "Nem sikerült engedélyezni az LVFS-t"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:846
+msgid "Failed to get remotes list"
+msgstr "Nem sikerült lekérni a távoliak listáját"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:883
+msgid "To complete the update further action is required"
+msgstr "A frissítés befejezéséhez további műveletre van szükség"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:886
+msgid "Action is required"
+msgstr "Művelet szükséges"
+
+#. TRANSLATORS: the firmware install failed for an unspecified reason
+#: src/gfu-main.c:987
+msgid "Failed to install firmware"
+msgstr "Nem sikerült telepíteni a belső vezérlőprogramot"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1011
+msgid "The update requires the system to shutdown to complete."
+msgstr "A frissítés a rendszer leállítását igényli a befejezéshez."
+
+#: src/gfu-main.c:1014 src/gfu-main.c:1689
+msgid "Shutdown now?"
+msgstr "Leállítja most?"
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1027
+msgid "The update requires a reboot to complete."
+msgstr "A frissítés újraindítást igényel a befejezéshez."
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1030 src/gfu-main.c:1707
+msgid "Restart now?"
+msgstr "Újraindítja most?"
+
+#. TRANSLATORS: inform the user that the
+#. installation was successful onto the device
+#: src/gfu-main.c:1044
+msgid "Installation successful"
+msgstr "A telepítés sikeres"
+
+#. TRANSLATORS: dialog text, %1 is a
+#. * version number, %2 is a device name
+#: src/gfu-main.c:1048
+#, c-format
+msgid "Installed firmware version %s on %s."
+msgstr "A belső vezérlőprogram telepített verziója %s a(z) %s eszközön."
+
+#. TRANSLATORS: e.g. bitlocker
+#: src/gfu-main.c:1083
+msgid "Full disk encryption detected"
+msgstr "Teljes lemeztitkosítás észlelhető"
+
+#. TRANSLATORS: buttons
+#: src/gfu-main.c:1085 src/gfu-main.c:1129
+msgid "Cancel"
+msgstr "Mégse"
+
+#. TRANSLATORS: the platform secret is stored in the PCRx registers on the TPM
+#: src/gfu-main.c:1091
+msgid ""
+"Some of the platform secrets may be invalidated when updating this firmware."
+msgstr ""
+"Egyes platformtitkok érvénytelenné válhatnak ennek a belső vezérlőprogramnak "
+"a frissítésekor."
+
+#. TRANSLATORS: 'recovery key' here refers to a code, rather than a metal thing
+#: src/gfu-main.c:1093
+msgid "Please ensure you have the volume recovery key before continuing."
+msgstr ""
+"A folytatás előtt győződjön meg arról, hogy rendelkezik-e a kötet "
+"helyreállítási kulcsával."
+
+#. TRANSLATORS: title, %1 is the firmware vendor, %2 is the
+#. device vendor name
+#: src/gfu-main.c:1112
+#, c-format
+msgid "The firmware from %s is not supplied by %s"
+msgstr ""
+"A(z) %s gyártótól származó belső vezérlőprogramot nem a(z) %s biztosította"
+
+#. TRANSLATORS: branch switch title
+#: src/gfu-main.c:1117
+msgid "The firmware is not supplied by the vendor"
+msgstr "A belső vezérlőprogramot nem a gyártó biztosította"
+
+#. TRANSLATORS: button text to switch to another stream of firmware
+#: src/gfu-main.c:1131
+msgid "Switch Branch"
+msgstr "Váltás ágra"
+
+#. TRANSLATORS: %1 is the device vendor name
+#: src/gfu-main.c:1136
+#, c-format
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with %s."
+msgstr ""
+"A hardver megsérülhet ennek a belső vezérlőprogramnak a használatával, és a "
+"kiadás telepítése érvénytelenítheti a(z) %s által vállalt garanciát."
+
+#. TRANSLATORS: the vendor is unknown
+#: src/gfu-main.c:1143
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with the vendor."
+msgstr ""
+"A hardver megsérülhet ennek a belső vezérlőprogramnak a használatával, és a "
+"kiadás telepítése érvénytelenítheti a gyártó által vállalt garanciát."
+
+#. TRANSLATORS: should the branch be changed
+#: src/gfu-main.c:1150
+msgid "You must understand the consequences of changing the firmware branch."
+msgstr ""
+"Meg kell értenie a belső vezérlőprogram ágának megváltoztatásával járó "
+"következményeket."
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1170
+#, c-format
+#| msgid "Reinstall %s firmware version %s"
+msgid "Reinstall %s firmware version %s?"
+msgstr "Újratelepíti a(z) %s eszközt %s verziójú belső vezérlőprogrammal?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1173
+#, c-format
+#| msgid "Upgrade %s firmware version %s"
+msgid "Upgrade %s firmware version %s?"
+msgstr "Frissíti a(z) %s eszközt %s verziójú belső vezérlőprogrammal?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1176
+#, c-format
+#| msgid "Downgrade %s firmware version %s"
+msgid "Downgrade %s firmware version %s?"
+msgstr "Telepíti a(z) %s eszközt %s verziójú korábbi belső vezérlőprogrammal?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1179
+#, c-format
+#| msgid "Install %s firmware version %s"
+msgid "Install %s firmware version %s?"
+msgstr "Telepíti a(z) %s eszközt %s verziójú belső vezérlőprogrammal?"
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1190
+#| msgid "Cancel"
+msgid "_Cancel"
+msgstr "_Mégse"
+
+#. TRANSLATORS: button text: install the same version again
+#: src/gfu-main.c:1195
+#| msgid "Reinstall"
+msgid "_Reinstall"
+msgstr "Új_ratelepítés"
+
+#. TRANSLATORS: button text, move from old -> new
+#: src/gfu-main.c:1201
+#| msgid "Upgrade"
+msgid "_Upgrade"
+msgstr "_Frissítés"
+
+#. TRANSLATORS: button text, move from new -> old
+#: src/gfu-main.c:1205
+#| msgid "Downgrade"
+msgid "_Downgrade"
+msgstr "Rége_bbi verzió telepítése"
+
+#. TRANSLATORS: the device can be used normallly
+#: src/gfu-main.c:1213
+msgid "The device will remain usable for the duration of the update"
+msgstr "Az eszköz használható marad a frissítés ideje alatt"
+
+#. TRANSLATORS: the device will be non-fuctional for a while
+#: src/gfu-main.c:1219
+msgid "The device will be unusable while the update is installing"
+msgstr "Az eszköz használhatatlan lesz a frissítés telepítése közben"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1287
+msgid "Failed to verify firmware"
+msgstr "Nem sikerült ellenőrizni a belső vezérlőprogramot"
+
+#. TRANSLATORS: inform the user that the
+#. firmware verification was successful
+#: src/gfu-main.c:1298
+msgid "Verification succeeded"
+msgstr "Az ellenőrzés sikerült"
+
+#. TRANSLATORS: firmware is cryptographically identical
+#: src/gfu-main.c:1302
+#, c-format
+msgid "%s firmware checksums matched"
+msgstr "A(z) %s belső vezérlőprogram ellenőrzőösszegek megegyeztek"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1334
+msgid "Verify firmware checksums?"
+msgstr "Ellenőrzi a belső vezérlőprogram ellenőrzőösszegeit?"
+
+#. TRANSLATORS: device will "go away" and then "come back"
+#: src/gfu-main.c:1339
+msgid "The device may be unusable during this action"
+msgstr "Az eszköz használhatatlan lehet a művelet alatt"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1352
+msgid "Failed to update checksums"
+msgstr "Nem sikerült frissíteni az ellenőrzőösszegeket"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1383
+msgid "Update cryptographic hash"
+msgstr "Kriptográfiai kivonat frissítése"
+
+#. TRANSLATORS: save what we have now as "valid"
+#: src/gfu-main.c:1388
+msgid "Record current device cryptographic hashes as verified?"
+msgstr ""
+"Feljegyzi az eszköz jelenlegi kriptográfiai kivonatait ellenőrzöttként?"
+
+#. TRANSLATORS: command description
+#: src/gfu-main.c:1416 src/gfu-main.c:1914
+msgid "Lingmo Firmware"
+msgstr "Lingmo belső vezérlőprogram"
+
+#. TRANSLATORS: you can put your name here :)
+#: src/gfu-main.c:1427
+msgid "translator-credits"
+msgstr ""
+"Meskó Balázs <mesko dot balazs at fsf dot hu>, 2023.\n"
+"Úr Balázs <ur dot balazs at fsf dot hu>, 2023, 2024."
+
+#: src/gfu-main.c:1481
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "Kategória"
+msgstr[1] "Kategóriák"
+
+#. title: hashes of the file payload
+#: src/gfu-main.c:1500 src/gfu-main.ui:680
+msgid "Checksum"
+msgid_plural "Checksums"
+msgstr[0] "Ellenőrzőösszeg"
+msgstr[1] "Ellenőrzőösszeg"
+
+#. TRANSLATORS: list of security issues, e.g. CVEs
+#: src/gfu-main.c:1518
+msgid "Fixed Issue"
+msgid_plural "Fixed Issues"
+msgstr[0] "Javított hiba"
+msgstr[1] "Javított hibák"
+
+#. TRANSLATORS: as in non-free
+#: src/gfu-main.c:1556
+msgid "Proprietary"
+msgstr "Tulajdonosi"
+
+#. TRANSLATORS: maybe try Linux?
+#: src/gfu-main.c:1648 src/gfu-main.c:1751
+msgid "The fwupd service is not available for your OS."
+msgstr "Az fwupd szolgáltatás nem érhető el az operációs rendszeréhez."
+
+#. TRANSLATORS: unlock means to make the device functional in another mode
+#: src/gfu-main.c:1672
+msgid "Failed to unlock device"
+msgstr "Nem sikerült feloldani az eszközt"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1686
+msgid "Unlocking a device requires the system to shutdown to complete."
+msgstr "Egy eszköz feloldása a rendszer leállítását igényli a befejezéshez."
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1703
+msgid "Unlocking a device requires a reboot to complete."
+msgstr "Egy eszköz feloldása újraindítást igényel a befejezéshez."
+
+#. TRANSLATORS: command line option
+#: src/gfu-main.c:1903
+msgid "Show extra debugging information"
+msgstr "További hibakeresési információk megjelenítése"
+
+#. TRANSLATORS: the user has sausages for fingers
+#: src/gfu-main.c:1918
+msgid "Failed to parse command line options"
+msgstr "Nem sikerült feldolgozni a parancssori kapcsolókat"
+
+#. window title
+#: src/gfu-main.ui:50
+msgid "Devices"
+msgstr "Eszközök"
+
+#: src/gfu-main.ui:57
+msgid "Main Menu"
+msgstr "Főmenü"
+
+#. LVFS is an online firmware provider
+#: src/gfu-main.ui:112
+msgid "LVFS is not enabled"
+msgstr "Az LVFS nincs engedélyezve"
+
+#. we need metadata so we know where to get the firmware from
+#: src/gfu-main.ui:122
+msgid ""
+"Firmware metadata can be obtained from the Linux Vendor Firmware Service at "
+"no cost."
+msgstr ""
+"A belső vezérlőprogram metaadatai ingyenesen beszerezhetők a Linux gyártói "
+"belső vezérlőprogram szolgáltatásból."
+
+#. button text
+#: src/gfu-main.ui:133
+msgid "Enable"
+msgstr "Engedélyezés"
+
+#. group title
+#: src/gfu-main.ui:164
+msgid "Device Properties"
+msgstr "Eszköz tulajdonságai"
+
+#. title: device version
+#: src/gfu-main.ui:169
+msgid "Current Version"
+msgstr "Jelenlegi verzió"
+
+#. title: if the device is locked
+#: src/gfu-main.ui:179
+msgid "Lock Status"
+msgstr "Zárolási állapot"
+
+#. title: the lowest version we can update to
+#: src/gfu-main.ui:190
+msgid "Minimum Version"
+msgstr "Legkisebb verzió"
+
+#. title: the version of the [read only] bootloader
+#: src/gfu-main.ui:200
+msgid "Bootloader Version"
+msgstr "Rendszerbetöltő verziója"
+
+#. title: device manufacturer
+#. title: manufacturer that supplied the file
+#: src/gfu-main.ui:210 src/gfu-main.ui:538
+msgid "Vendor"
+msgstr "Gyártó"
+
+#. title: firmware stream, e.g. coreboot
+#: src/gfu-main.ui:220
+msgid "Branch"
+msgstr "Ág"
+
+#. title: ime in seconds to update
+#. title: time to deploy this specific update
+#: src/gfu-main.ui:240 src/gfu-main.ui:640
+msgid "Install Duration"
+msgstr "Telepítés időtartama"
+
+#. title: how many times the device can be updated
+#: src/gfu-main.ui:250
+msgid "Flashes Left"
+msgstr "Hátralévő beírások száma"
+
+#. title: the error text from las time
+#: src/gfu-main.ui:260
+msgid "Update Error"
+msgstr "Frissítési hiba"
+
+#. title: problems why we can't use the device
+#: src/gfu-main.ui:276
+msgid "Problems"
+msgstr "Problémák"
+
+#. title: device unique ID
+#: src/gfu-main.ui:292
+msgid "Serial Number"
+msgstr "Sorozatszám"
+
+#. title: if we can verify the firmware
+#: src/gfu-main.ui:302
+msgid "Attestation"
+msgstr "Tanúsítás"
+
+#. button: save as trusted
+#: src/gfu-main.ui:319
+#| msgid "_Store"
+msgid "_Store…"
+msgstr "_Tárolás…"
+
+#. button: verify the checksum
+#: src/gfu-main.ui:333
+msgid "_Verify"
+msgstr "_Ellenőrzés"
+
+#: src/gfu-main.ui:345
+msgid "Hardware Identification"
+msgstr "Hardver azonosítása"
+
+#. title: Information about the release, e.g. is-signed
+#: src/gfu-main.ui:358 src/gfu-main.ui:630
+msgid "Flags"
+msgstr "Jelzők"
+
+#. title: there is firmware we can install
+#: src/gfu-main.ui:375
+msgid "Available Releases"
+msgstr "Elérhető kiadások"
+
+#. title: there are no releases to install
+#: src/gfu-main.ui:391
+msgid "No Releases Available"
+msgstr "Nincsenek elérhető kiadások"
+
+#. title: when starting
+#: src/gfu-main.ui:404
+msgid "Loading"
+msgstr "Betöltés"
+
+#. more information about when we're loading
+#: src/gfu-main.ui:420
+msgid "Loading devices…"
+msgstr "Eszközök betöltése…"
+
+#. title: no devices could be found we can update
+#: src/gfu-main.ui:436
+msgid "No Devices"
+msgstr "Nincsenek eszközök"
+
+#. title: one line
+#: src/gfu-main.ui:505
+msgid "Summary"
+msgstr "Összegzés"
+
+#. title: multiple lines of prose
+#: src/gfu-main.ui:520
+msgid "Description"
+msgstr "Leírás"
+
+#. title: what we are downloading
+#: src/gfu-main.ui:548
+msgid "Filename"
+msgstr "Fájlnév"
+
+#. title: size in bytes
+#: src/gfu-main.ui:566
+msgid "Size"
+msgstr "Méret"
+
+#. title: method of doing the update, e.g. DFU
+#: src/gfu-main.ui:576
+msgid "Protocol"
+msgstr "Protokoll"
+
+#. title: the nice name of the firmware remote
+#: src/gfu-main.ui:589
+msgid "Remote ID"
+msgstr "Távoli azonosító"
+
+#. title: the ID to identify the stream
+#: src/gfu-main.ui:602
+msgid "AppStream ID"
+msgstr "AppStream-azonosító"
+
+#. title, e.g. Nonfree, GPLv2+ etc
+#: src/gfu-main.ui:620
+msgid "License"
+msgstr "Licenc"
+
+#. title: any message we show the user after the update is done
+#: src/gfu-main.ui:650
+msgid "Update Message"
+msgstr "Frissítési üzenet"
+
+#. title: the type of firmware, e.g. X-ManagementEngine
+#: src/gfu-main.ui:660
+msgid "Categories"
+msgstr "Kategóriák"
+
+#. title: list of security issues, e.g. CVE numbers
+#: src/gfu-main.ui:670
+msgid "Issues"
+msgstr "Problémák"
+
+#. menu-text: download a new copy of the firmware metadata
+#: src/gfu-main.ui:711
+msgid "_Refresh Metadata"
+msgstr "Metaadatok _frissítése"
+
+#. menu-text: select and install a local file
+#: src/gfu-main.ui:715
+msgid "_Install Firmware Archive"
+msgstr "Belsővezérlőprogram-archívum _telepítése"
+
+#: src/gfu-main.ui:719
+msgid "_Keyboard Shortcuts"
+msgstr "_Gyorsbillentyűk"
+
+#. menu-text: shows information about this ap
+#: src/gfu-main.ui:723
+msgid "_About"
+msgstr "_Névjegy"
+
+#: src/help-overlay.ui:12
+msgid "General"
+msgstr "Általános"
+
+#: src/help-overlay.ui:17
+#| msgid "_Refresh Metadata"
+msgid "Refresh Metadata"
+msgstr "Metaadatok frissítése"
+
+#: src/help-overlay.ui:23
+#| msgid "_Install Firmware Archive"
+msgid "Install Firmware Archive"
+msgstr "Belsővezérlőprogram-archívum telepítése"
+
+#: src/help-overlay.ui:29
+msgid "Open Main Menu"
+msgstr "Főmenü megnyitása"
+
+#: src/help-overlay.ui:35
+msgid "Show Keyboard Shortcuts"
+msgstr "Gyorsbillentyűk megjelenítése"
+
+#: src/help-overlay.ui:41
+msgid "Close Window"
+msgstr "Ablak bezárása"
+
+#: src/help-overlay.ui:47
+msgid "Quit"
+msgstr "Kilépés"
+
+#. TRANSLATORS: update severity
+#: src/gfu-release-row.c:42
+msgid "Critical"
+msgstr "Kritikus"
+
+#. TRANSLATORS: update severity
+#: src/gfu-release-row.c:49
+msgid "High Priority"
+msgstr "Magas prioritású"
+
+#. TRANSLATORS: upgrading the firmware
+#: src/gfu-release-row.c:65
+#| msgid "Upgrade"
+msgid "_Upgrade…"
+msgstr "_Frissítés…"
+
+#. TRANSLATORS: downgrading the firmware
+#: src/gfu-release-row.c:68
+#| msgid "Downgrade"
+msgid "_Downgrade…"
+msgstr "_Régebbi verzió telepítése…"
+
+#. TRANSLATORS: installing the same firmware that is
+#. * currently installed
+#: src/gfu-release-row.c:72
+#| msgid "Reinstall"
+msgid "_Reinstall…"
+msgstr "Ú_jratelepítés…"
+
+#. TRANSLATORS: problems are things the user has to fix, e.g. low battery
+#: src/gfu-release-row.c:83
+msgid "Cannot perform action as the device has a problem"
+msgstr "Nem lehet végrehajtani a műveletet, mivel probléma van az eszközzel"

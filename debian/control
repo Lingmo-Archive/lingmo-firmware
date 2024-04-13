@@ -1,0 +1,33 @@
+Source: lingmo-firmware
+Section: lingmo
+Priority: optional
+Maintainer: Lingmo OS Team <team@lingmo.org>
+Uploaders: Lingmo OS Team <team@lingmo.org>
+Build-Depends: appstream,
+               debhelper-compat (= 13),
+               help2man,
+               libadwaita-1-dev (>= 1.4~rc),
+               libfwupd-dev (>= 1.8.11),
+               libglib2.0-dev (>= 2.74.0),
+               libgtk-4-dev (>= 4.6),
+               libxmlb-dev (>= 0.1.7),
+               meson (>= 0.46.0),
+               systemd-dev (>= 211),
+Rules-Requires-Root: no
+Standards-Version: 4.6.2
+Homepage: https://github.com/LingmoOS/lingmo-firmware
+Vcs-Git: https://github.com/LingmoOS/lingmo-firmware.git
+Vcs-Browser: https://github.com/LingmoOS/lingmo-firmware
+
+Package: lingmo-firmware
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         fwupd (>= 1.7.5),
+Description: GTK front end for fwupd
+ This application can:
+ .
+  - Upgrade, Downgrade, & Reinstall firmware on devices supported by fwupd.
+  - Unlock locked fwupd devices
+  - Verify firmware on supported devices
+  - Display all releases for a fwupd device

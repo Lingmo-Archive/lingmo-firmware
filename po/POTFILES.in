@@ -1,0 +1,9 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/appdata/org.lingmo.Firmware.metainfo.xml.in
+data/org.lingmo.Firmware.desktop.in
+src/gfu-common.c
+src/gfu-main.c
+src/gfu-main.ui
+src/help-overlay.ui
+src/gfu-release-row.c

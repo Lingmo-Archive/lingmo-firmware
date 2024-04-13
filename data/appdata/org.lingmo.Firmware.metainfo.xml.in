@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 Richard Hughes <richard@hughsie.com> -->
+<component type="desktop">
+  <id>org.lingmo.Firmware</id>
+  <launchable type="desktop-id">org.lingmo.Firmware.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <!-- TRANSLATORS: the application name -->
+  <name>Firmware</name>
+  <!-- TRANSLATORS: one-line description for the app -->
+  <summary>Install firmware on devices</summary>
+  <description>
+    <!-- TRANSLATORS: AppData description marketing paragraph -->
+    <p>
+      Update, reinstall and downgrade firmware on devices supported by fwupd.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/LingmoOS/lingmo-firmware/data/appdata/ss-devices.png</image>
+      <caption>Devices panel</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://github.com/LingmoOS/lingmo-firmware/data/appdata/ss-releases.png</image>
+      <caption>Releases panel</caption>
+    </screenshot>
+  </screenshots>
+  <project_group>Lingmo</project_group>
+  <developer_name>Lingmo OS Team</developer_name>
+  <developer id="com.hughsie">
+    <name>Lingmo OS Team</name>
+  </developer>
+  <translation type="gettext">lingmo-firmware</translation>
+  <releases>
+    <release date="2024-04-13" version="2.0.0">
+      <description>
+        <p>Release</p>
+        <ul>
+          <li>Rename Lingmo-Firmware</li>
+        </ul>
+        <p>This release also adds new translations.</p>
+      </description>
+    </release>
+  </releases>
+  <url type="homepage">https://github.com/LingmoOS/lingmo-firmware</url>
+  <url type="bugtracker">https://github.com/LingmoOS/lingmo-firmware/issues</url>
+  <url type="donation"></url>
+  <update_contact>richard_at_hughsie.com</update_contact>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+</component>

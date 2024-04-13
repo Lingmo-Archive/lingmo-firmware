@@ -1,0 +1,989 @@
+# Basque translation for lingmo-firmware.
+# Copyright (C) 2022 lingmo-firmware's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lingmo-firmware package.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2022, 2023.
+#
+msgid ""
+msgstr "Project-Id-Version: lingmo-firmware master\n"
+"Report-Msgid-Bugs-To: https://github.com/LingmoOS/lingmo-firmware/issues\n"
+"POT-Creation-Date: 2023-10-19 07:29+0000\n"
+"PO-Revision-Date: 2023-10-21 20:28+0000\n"
+"Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
+"Language-Team: Basque <librezale@librezale.eus>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. TRANSLATORS: the application name
+#. window title
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:8
+#: data/org.lingmo.Firmware.desktop.in:3 src/gfu-main.ui:55
+msgid "Firmware"
+msgstr "Firmwarea"
+
+#. TRANSLATORS: one-line description for the app
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:10
+#: data/org.lingmo.Firmware.desktop.in:4
+msgid "Install firmware on devices"
+msgstr "Instalatu firmwarea gailuetan"
+
+#. TRANSLATORS: AppData description marketing paragraph
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:13
+msgid "Update, reinstall and downgrade firmware on devices supported by fwupd."
+msgstr "Eguneratu, berrinstalatu eta bertsio zaharragora itzuli firmwarea, fwupd aplikazioak onartzen dituen gailuetan."
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:20
+msgid "Devices panel"
+msgstr "Gailuen panela"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:24
+msgid "Releases panel"
+msgstr "Argitalpenen panela"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:28
+msgid "Richard Hughes"
+msgstr "Richard Hughes"
+
+#. TRANSLATORS: these are desktop keywords - remember the trailing ';' :)
+#: data/org.lingmo.Firmware.desktop.in:12
+msgid "Firmware;"
+msgstr "Firmwarea;"
+
+#. TRANSLATORS: We verified the payload against the server
+#: src/gfu-common.c:144
+msgid "Trusted payload"
+msgstr "Karga erabilgarri fidagarria"
+
+#. TRANSLATORS: We verified the meatdata against the server
+#: src/gfu-common.c:148
+msgid "Trusted metadata"
+msgstr "Metadatu fidagarriak"
+
+#. TRANSLATORS: version is newer
+#: src/gfu-common.c:152
+msgid "Is upgrade"
+msgstr "Eguneratzea da"
+
+#. TRANSLATORS: version is older
+#: src/gfu-common.c:156
+msgid "Is downgrade"
+msgstr "Bertsio zaharragora itzultzea da"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:160
+msgid "Blocked version"
+msgstr "Blokeatutako bertsioa"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:164
+msgid "Not approved"
+msgstr "Ez dago onartuta"
+
+#. TRANSLATORS: is not the main firmware stream
+#: src/gfu-common.c:168
+msgid "Alternate branch"
+msgstr "Ordezko adarra"
+
+#. TRANSLATORS: is not supported by the vendor
+#: src/gfu-common.c:172
+msgid "Community supported"
+msgstr "Komunitateak mantendua"
+
+#. TRANSLATORS: the QA team is someone we trust
+#: src/gfu-common.c:177
+msgid "Report is trusted"
+msgstr "Txostena fidagarria da"
+
+#. TRANSLATORS: Device cannot be removed easily
+#: src/gfu-common.c:303
+msgid "Internal device"
+msgstr "Barneko gailua"
+
+#. TRANSLATORS: Device is updatable in this or any other mode
+#: src/gfu-common.c:307
+msgid "Updatable"
+msgstr "Eguneragarria"
+
+#. TRANSLATORS: Update can only be done from offline mode
+#: src/gfu-common.c:311
+msgid "Update requires a reboot"
+msgstr "Eguneratzeak berrabiaraztea behar du"
+
+#. TRANSLATORS: Must be plugged in to an outlet
+#: src/gfu-common.c:315
+msgid "System requires external power source"
+msgstr "Sistemak kanpoko energia-iturria behar du"
+
+#. TRANSLATORS: Is locked and can be unlocked
+#: src/gfu-common.c:319
+msgid "Device is locked"
+msgstr "Gailua blokeatuta dago"
+
+#. TRANSLATORS: Is found in current metadata
+#: src/gfu-common.c:323
+msgid "Supported on LVFS"
+msgstr "LVFSn onartua"
+
+#. TRANSLATORS: Requires a bootloader mode to be manually enabled by the user
+#: src/gfu-common.c:327
+msgid "Requires a bootloader"
+msgstr "Abio-kargatzailea behar du"
+
+#. TRANSLATORS: Requires a reboot to apply firmware or to reload hardware
+#: src/gfu-common.c:331
+msgid "Needs a reboot after installation"
+msgstr "Berrabiarazi behar da instalazioaren ondoren"
+
+#. TRANSLATORS: Requires system shutdown to apply firmware
+#: src/gfu-common.c:335
+msgid "Needs shutdown after installation"
+msgstr "Itzali behar da instalazioaren ondoren"
+
+#. TRANSLATORS: Has been reported to a metadata server
+#: src/gfu-common.c:339
+msgid "Reported to LVFS"
+msgstr "LVFSri jakinarazia"
+
+#. TRANSLATORS: User has been notified
+#: src/gfu-common.c:343
+msgid "User has been notified"
+msgstr "Erabiltzaileari jakinarazpena bidali zaio"
+
+#. TRANSLATORS: Install composite firmware on the parent before the child
+#: src/gfu-common.c:351
+msgid "Install to parent device first"
+msgstr "Instalatu gailu gurasoan lehenengo"
+
+#. TRANSLATORS: Is currently in bootloader mode
+#: src/gfu-common.c:355
+msgid "Is in bootloader mode"
+msgstr "Abio-kargatzailearen moduan dago"
+
+#. TRANSLATORS: The hardware is waiting to be replugged
+#: src/gfu-common.c:359
+msgid "Hardware is waiting to be replugged"
+msgstr "Hardwarea berriro entxufatua izateko zain dago"
+
+#. TRANSLATORS: Ignore validation safety checks when flashing this device
+#: src/gfu-common.c:363
+msgid "Ignore validation safety checks"
+msgstr "Ez ikusiarena egin baliozkotzeko segurtasun-egiaztatzei"
+
+#. TRANSLATORS: Device update needs to be separately activated
+#: src/gfu-common.c:375
+msgid "Device update needs activation"
+msgstr "Gailuaren eguneratzeak aktibazioa behar du"
+
+#. TRANSLATORS: Device will not return after update completes
+#: src/gfu-common.c:391
+msgid "Device will not re-appear after update completes"
+msgstr "Gailua ez da berriro agertuko eguneratzea osatu arte"
+
+#. TRANSLATORS: Device supports some form of checksum verification
+#: src/gfu-common.c:395
+msgid "Cryptographic hash verification is available"
+msgstr "Hash-egiaztatze kriptografikoa erabilgarri"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:403
+msgid "Device stages updates"
+msgstr "Gailuak eguneratzeak gordetzen ditu"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:407
+msgid "Device can recover flash failures"
+msgstr "Gailuak flash hutsegiteak berreskuratu ditzake"
+
+#. TRANSLATORS: Device remains usable during update
+#: src/gfu-common.c:411
+msgid "Device is usable for the duration of the update"
+msgstr "Gailua erabilgarri egongo da eguneratzeak iraun bitartean"
+
+#. TRANSLATORS: Device does not jump directly to the newest
+#: src/gfu-common.c:415
+msgid "Device installs all intermediate releases"
+msgstr "Gailuak tarteko bertsio guztiak instalatzen ditu"
+
+#. TRANSLATORS: Device does not restart and requires a manual action
+#: src/gfu-common.c:419
+msgid "Device skips restart"
+msgstr "Gailuak berrabiaraztea saltatzen du"
+
+#. TRANSLATORS: the stream can be provided by different vendors
+#: src/gfu-common.c:423
+msgid "Device supports switching to a different stream of firmware"
+msgstr "Gailuak beste firmware-korronte batera aldatzea onartzen du"
+
+#. TRANSLATORS: it is saved to the users local disk
+#: src/gfu-common.c:427
+msgid "Device firmware will be saved before installing updates"
+msgstr "Gailuaren firmwarea gorde egingo da eguneratzeak instalatu ondoren"
+
+#. TRANSLATORS: on some systems certain devices have to have matching versions,
+#. * e.g. the EFI driver for a given network card cannot be different
+#: src/gfu-common.c:432
+msgid "All devices of the same type will be updated at the same time"
+msgstr "Mota bereko gailu guztiak aldi berean eguneratuko dira"
+
+#. TRANSLATORS: some devices can only be updated to a new semver and cannot
+#. * be downgraded or reinstalled with the sexisting version
+#: src/gfu-common.c:437
+msgid "Only version upgrades are allowed"
+msgstr "Bertsio-eguneratzeak soilik onartzen dira"
+
+#. TRANSLATORS: the device is currently unreachable, perhaps because it is in a
+#. * lower power state or is out of wireless range
+#: src/gfu-common.c:442
+msgid "Device is currently unreachable"
+msgstr "Momentu honetan ezin da gailua atzitu"
+
+#. TRANSLATORS: a volume with full-disk-encryption was found on this machine,
+#. * typically a Windows NTFS partition with BitLocker
+#: src/gfu-common.c:447
+msgid "May invalidate secrets used to decrypt volumes"
+msgstr "Bolumenak deszifratzeko erabilitako sekretuak baliogabetu ditzake"
+
+#. TRANSLATORS: the vendor is no longer supporting the device
+#: src/gfu-common.c:451
+msgid "End of life"
+msgstr "Bizitzaren amaiera"
+
+#. TRANSLATORS: firmware is verified on-device the payload using strong crypto
+#: src/gfu-common.c:455
+msgid "Signed payload"
+msgstr "Zeinudun karga"
+
+#. TRANSLATORS: firmware payload is unsigned and it is possible to modify it
+#: src/gfu-common.c:459
+msgid "Unsigned payload"
+msgstr "Zeinurik gabeko karga"
+
+#. TRANSLATORS: this device is not actually real
+#: src/gfu-common.c:463
+msgid "Emulated"
+msgstr "Emulatua"
+
+#. TRANSLATORS: we're saving all USB events for emulation
+#: src/gfu-common.c:467
+msgid "Tagged for emulation"
+msgstr "Emulaziorako etiketatua"
+
+#. TRANSLATORS: device should stay on one firmware version unless the new version
+#. * is explicitly specified
+#: src/gfu-common.c:473
+msgid "Only explicit updates"
+msgstr "Eguneratze esplizituak soilik"
+
+#. TRANSLATORS: daemon is inactive
+#: src/gfu-common.c:576
+msgid "Idle…"
+msgstr "Inaktibo…"
+
+#. TRANSLATORS: decompressing the firmware file
+#: src/gfu-common.c:580
+msgid "Decompressing…"
+msgstr "Deskonprimatzen…"
+
+#. TRANSLATORS: parsing the firmware information
+#: src/gfu-common.c:584
+msgid "Loading…"
+msgstr "Kargatzen…"
+
+#. TRANSLATORS: restarting the device to pick up new F/W
+#: src/gfu-common.c:588
+msgid "Restarting device…"
+msgstr "Gailua berrabiarazten…"
+
+#. TRANSLATORS: reading from the flash chips
+#: src/gfu-common.c:592
+msgid "Reading…"
+msgstr "Irakurtzen…"
+
+#. TRANSLATORS: writing to the flash chips
+#: src/gfu-common.c:596
+msgid "Writing…"
+msgstr "Idazten…"
+
+#. TRANSLATORS: erasing contents of the flash chips
+#: src/gfu-common.c:600
+msgid "Erasing…"
+msgstr "Ezabatze…"
+
+#. TRANSLATORS: verifying we wrote the firmware correctly
+#: src/gfu-common.c:604
+msgid "Verifying…"
+msgstr "Egiaztatzen…"
+
+#. TRANSLATORS: scheduing an update to be done on the next boot
+#: src/gfu-common.c:608
+msgid "Scheduling…"
+msgstr "Planifikatzen…"
+
+#. TRANSLATORS: downloading from a remote server
+#: src/gfu-common.c:612
+msgid "Downloading…"
+msgstr "Deskargatzen…"
+
+#. TRANSLATORS: waiting for user to authenticate
+#: src/gfu-common.c:616
+msgid "Authenticating…"
+msgstr "Autentifikatzen…"
+
+#. TRANSLATORS: waiting for device to do something
+#: src/gfu-common.c:620
+msgid "Waiting…"
+msgstr "Itxaroten…"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:624
+msgid "Shutting down…"
+msgstr "Itzaltzen…"
+
+#. TRANSLATORS: the attestation failed
+#: src/gfu-main.c:248
+msgid "Not OK"
+msgstr "Ez ados"
+
+#. TRANSLATORS: the checksum verified
+#: src/gfu-main.c:253 src/gfu-main.c:1084
+msgid "OK"
+msgstr "Ados"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:264
+msgid "System power is too low to perform the update"
+msgstr "Sistemak energia gutxiegi du eguneratzea gauzatzeko"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:268
+#, c-format
+msgid "System power is too low to perform the update (%u%%, requires %u%%)"
+msgstr "Sistemak energia gutxiegi du eguneratzea gauzatzeko (%u%%, behar du %u%%)"
+
+#. TRANSLATORS: for example, a Bluetooth mouse that is in powersave mode
+#: src/gfu-main.c:274
+msgid "Device is unreachable, or out of wireless range"
+msgstr "Gailua ezin da atzitu, edo haririk gabeko eremutik kanpo dago"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:281
+msgid "Device battery power is too low"
+msgstr "Gailuak energia gutxiegi du"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:284
+#, c-format
+msgid "Device battery power is too low (%u%%, requires %u%%)"
+msgstr "Gailuak energia gutxiegi du (%u%%, behar du %u%%)"
+
+#. TRANSLATORS: usually this is when we're waiting for a reboot
+#: src/gfu-main.c:290
+msgid "Device is waiting for the update to be applied"
+msgstr "Gailua eguneratzea aplikatzeko zain dago"
+
+#. TRANSLATORS: as in, wired mains power for a laptop
+#: src/gfu-main.c:294
+msgid "Device requires AC power to be connected"
+msgstr "Gailuak argindarrari konektatuta egon behar du"
+
+#. TRANSLATORS: lid means "laptop top cover"
+#: src/gfu-main.c:298
+msgid "Device cannot be used while the lid is closed"
+msgstr "Gailua ezin da erabili tapa itxita badago"
+
+#. TRANSLATORS: device cannot be interrupted, for instance taking a phone call
+#: src/gfu-main.c:303
+msgid "Device is in use"
+msgstr "Gailua erabiltzen ari da"
+
+#. TRANSLATORS: the hw IDs the device defines,
+#. * e.g. USB:0x1234
+#: src/gfu-main.c:402 src/gfu-main.ui:201
+msgid "Vendor ID"
+msgid_plural "Vendor IDs"
+msgstr[0] "Fabrikatzailearen IDa"
+msgstr[1] "Fabrikatzailearen IDak"
+
+#. TRANSLATORS: the checksum state was unknown
+#: src/gfu-main.c:432
+msgid "Unknown"
+msgstr "Ezezaguna"
+
+#. TRANSLATORS: error in shutting down the system
+#: src/gfu-main.c:511
+msgid "Failed to shutdown device"
+msgstr "Huts egin du gailua itzaltzeak"
+
+#: src/gfu-main.c:512
+msgid "A manual shutdown is required."
+msgstr "Eskuz itzali behar da."
+
+#. TRANSLATORS: error in rebooting down the system
+#: src/gfu-main.c:527
+msgid "Failed to reboot device"
+msgstr "Huts egin du gailua berrabiarazteak"
+
+#: src/gfu-main.c:528
+msgid "A manual reboot is required."
+msgstr "Eskuz berrabiarazi behar da."
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:547
+msgid "Failed to load list of remotes"
+msgstr "Huts egin du urrunekoen zerrenda kargatzeak"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:641
+msgid "Failed to load device list"
+msgstr "Huts egin du gailuen zerrenda kargatzeak"
+
+#. TRANSLATORS: no devices supporting firmware updates were found
+#: src/gfu-main.c:670
+msgid "No supported devices were found…"
+msgstr "Onartzen ez diren gailuak aurkitu dira…"
+
+#. TRANSLATORS: the list of available firmware failed to be updated
+#: src/gfu-main.c:772
+msgid "Failed to refresh metadata"
+msgstr "Huts egin du metadatuak freskatzeak"
+
+#. TRANSLATORS: the LVFS remote was not found on the system
+#: src/gfu-main.c:787
+msgid "Failed to find LVFS"
+msgstr "Huts egin du LVFS aurkitzeak"
+
+#. TRANSLATORS: the LVFS remote could not be enabled
+#: src/gfu-main.c:805
+msgid "Failed to enable LVFS"
+msgstr "Huts egin du LVFS gaitzeak"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:846
+msgid "Failed to get remotes list"
+msgstr "Huts egin du urrunekoen zerrenda eskuratzeak"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:883
+msgid "To complete the update further action is required"
+msgstr "Ekintza gehiago gauzatu behar dira eguneratzea osatzeko"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:886
+msgid "Action is required"
+msgstr "Ekintza bat behar da"
+
+#. TRANSLATORS: the firmware install failed for an unspecified reason
+#: src/gfu-main.c:987
+msgid "Failed to install firmware"
+msgstr "Huts egin du firmwarea instalatzeak"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1011
+msgid "The update requires the system to shutdown to complete."
+msgstr "Sistema itzali behar da eguneratzea osatzeko."
+
+#: src/gfu-main.c:1014 src/gfu-main.c:1689
+msgid "Shutdown now?"
+msgstr "Itzali orain?"
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1027
+msgid "The update requires a reboot to complete."
+msgstr "Sistema berrabiarazi behar da eguneratzea osatzeko."
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1030 src/gfu-main.c:1707
+msgid "Restart now?"
+msgstr "Berrabiarazi orain?"
+
+#. TRANSLATORS: inform the user that the
+#. installation was successful onto the device
+#: src/gfu-main.c:1044
+msgid "Installation successful"
+msgstr "Instalazioa ongi gauzatu da"
+
+#. TRANSLATORS: dialog text, %1 is a
+#. * version number, %2 is a device name
+#: src/gfu-main.c:1048
+#, c-format
+msgid "Installed firmware version %s on %s."
+msgstr "instalatutako firmwarearen bertsioa: %s / %s."
+
+#. TRANSLATORS: e.g. bitlocker
+#: src/gfu-main.c:1083
+msgid "Full disk encryption detected"
+msgstr "Disko-zifratze osoa detektatu da"
+
+#. TRANSLATORS: buttons
+#: src/gfu-main.c:1085 src/gfu-main.c:1129
+msgid "Cancel"
+msgstr "Utzi"
+
+#. TRANSLATORS: the platform secret is stored in the PCRx registers on the TPM
+#: src/gfu-main.c:1091
+msgid ""
+"Some of the platform secrets may be invalidated when updating this firmware."
+msgstr "Plataformaren sekretuetako batzuk baliogabetu daitezke firmware hau eguneratzean."
+
+#. TRANSLATORS: 'recovery key' here refers to a code, rather than a metal thing
+#: src/gfu-main.c:1093
+msgid "Please ensure you have the volume recovery key before continuing."
+msgstr "Ziurtatu bolumena berreskuratzeko gakoa duzula eragiketarekin jarraitu baino lehen."
+
+#. TRANSLATORS: title, %1 is the firmware vendor, %2 is the
+#. device vendor name
+#: src/gfu-main.c:1112
+#, c-format
+msgid "The firmware from %s is not supplied by %s"
+msgstr "%s gailuaren firmwarea ez da %s fabrikatzailearena"
+
+#. TRANSLATORS: branch switch title
+#: src/gfu-main.c:1117
+msgid "The firmware is not supplied by the vendor"
+msgstr "Fabrikatzaileak ez du firmwarea eskaintzen"
+
+#. TRANSLATORS: button text to switch to another stream of firmware
+#: src/gfu-main.c:1131
+msgid "Switch Branch"
+msgstr "Aldatu adarra"
+
+#. TRANSLATORS: %1 is the device vendor name
+#: src/gfu-main.c:1136
+#, c-format
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with %s."
+msgstr "Zure hardwarea kaltetu daiteke firmware hau erabilita, eta bertsio hau instalatzen bada %s fabrikatzailearen bermea hautsi daiteke."
+
+#. TRANSLATORS: the vendor is unknown
+#: src/gfu-main.c:1143
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with the vendor."
+msgstr "Zure hardwarea kaltetu daiteke firmware hau erabilita, eta bertsio hau instalatzen bada fabrikatzailearen bermea hautsi daiteke."
+
+#. TRANSLATORS: should the branch be changed
+#: src/gfu-main.c:1150
+msgid "You must understand the consequences of changing the firmware branch."
+msgstr "Firmware-adarrez aldatzeak dituen ondorioak ulertu behar dituzu."
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1170
+#, c-format
+msgid "Reinstall %s firmware version %s?"
+msgstr "Berrinstalatu %s firmwarea, %s bertsioa?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1173
+#, c-format
+msgid "Upgrade %s firmware version %s?"
+msgstr "Eguneratu %s firmwarea, %s bertsioa?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1176
+#, c-format
+msgid "Downgrade %s firmware version %s?"
+msgstr "Instalatu %s firmwarearen bertsio zaharragoa, %s bertsioa?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1179
+#, c-format
+msgid "Install %s firmware version %s?"
+msgstr "Instalatu %s firmwarea, %s bertsioa?"
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1190
+msgid "_Cancel"
+msgstr "_Utzi"
+
+#. TRANSLATORS: button text: install the same version again
+#: src/gfu-main.c:1195
+msgid "_Reinstall"
+msgstr "_Berrinstalatu"
+
+#. TRANSLATORS: button text, move from old -> new
+#: src/gfu-main.c:1201
+msgid "_Upgrade"
+msgstr "B_ertsio-berritu"
+
+#. TRANSLATORS: button text, move from new -> old
+#: src/gfu-main.c:1205
+msgid "_Downgrade"
+msgstr "Bertsio _zaharragoa instalatu"
+
+#. TRANSLATORS: the device can be used normallly
+#: src/gfu-main.c:1213
+msgid "The device will remain usable for the duration of the update"
+msgstr "Gailuak erabilgarri egon behar du eguneratzeak irauten duen bitartean"
+
+#. TRANSLATORS: the device will be non-fuctional for a while
+#: src/gfu-main.c:1219
+msgid "The device will be unusable while the update is installing"
+msgstr "Gailuak ez du erabilgarri egon behar eguneratzea instalatzen den bitartean"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1287
+msgid "Failed to verify firmware"
+msgstr "Huts egin du firmwarea egiaztatzeak"
+
+#. TRANSLATORS: inform the user that the
+#. firmware verification was successful
+#: src/gfu-main.c:1298
+msgid "Verification succeeded"
+msgstr "Egiaztatzea ongi gauzatu da"
+
+#. TRANSLATORS: firmware is cryptographically identical
+#: src/gfu-main.c:1302
+#, c-format
+msgid "%s firmware checksums matched"
+msgstr "%s firmwarearen kontrol-baturak bat datoz"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1334
+msgid "Verify firmware checksums?"
+msgstr "Egiaztatu firmwarearen kontrol-batura?"
+
+#. TRANSLATORS: device will "go away" and then "come back"
+#: src/gfu-main.c:1339
+msgid "The device may be unusable during this action"
+msgstr "Gailua beharbada ez da egongo erabilgarri ekintza hau gauzatu bitartean"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1352
+msgid "Failed to update checksums"
+msgstr "Huts egin du kontrol-baturak eguneratzeak"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1383
+msgid "Update cryptographic hash"
+msgstr "Eguneratu zifratze-hasha"
+
+#. TRANSLATORS: save what we have now as "valid"
+#: src/gfu-main.c:1388
+msgid "Record current device cryptographic hashes as verified?"
+msgstr "Erregistratu uneko gailuaren hash kriptografikoak egiaztatuak baleude bezala?"
+
+#. TRANSLATORS: command description
+#: src/gfu-main.c:1416 src/gfu-main.c:1911
+msgid "Lingmo Firmware"
+msgstr "Lingmo Firmware"
+
+#. TRANSLATORS: you can put your name here :)
+#: src/gfu-main.c:1427
+msgid "translator-credits"
+msgstr "translator-credits"
+
+#: src/gfu-main.c:1481
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "Kategorai"
+msgstr[1] "Kategoriak"
+
+#. title: hashes of the file payload
+#: src/gfu-main.c:1500 src/gfu-main.ui:651
+msgid "Checksum"
+msgid_plural "Checksums"
+msgstr[0] "Kontrol-batura"
+msgstr[1] "Kontrol-baturak"
+
+#. TRANSLATORS: list of security issues, e.g. CVEs
+#: src/gfu-main.c:1518
+msgid "Fixed Issue"
+msgid_plural "Fixed Issues"
+msgstr[0] "Konpondutako auzia"
+msgstr[1] "Konpondutako auziak"
+
+#. TRANSLATORS: as in non-free
+#: src/gfu-main.c:1556
+msgid "Proprietary"
+msgstr "Jabeduna"
+
+#. TRANSLATORS: maybe try Linux?
+#: src/gfu-main.c:1648 src/gfu-main.c:1751
+msgid "The fwupd service is not available for your OS."
+msgstr "fwup zerbitzua ez dago erabilgarri zure sistema eragilean."
+
+#. TRANSLATORS: unlock means to make the device functional in another mode
+#: src/gfu-main.c:1672
+msgid "Failed to unlock device"
+msgstr "Huts egin du gailua desblokeatzeak"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1686
+msgid "Unlocking a device requires the system to shutdown to complete."
+msgstr "Gailu baten desblokeoa osatzeko, sistema guztiz itxi behar da."
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1703
+msgid "Unlocking a device requires a reboot to complete."
+msgstr "Gailu baten desblokeoa osatzeko, sistema berrabiarazi behar da."
+
+#. TRANSLATORS: command line option
+#: src/gfu-main.c:1900
+msgid "Show extra debugging information"
+msgstr "Erakutsi arazketa-informazio gehigarria"
+
+#. TRANSLATORS: the user has sausages for fingers
+#: src/gfu-main.c:1915
+msgid "Failed to parse command line options"
+msgstr "Huts egin du komando-lerroko aukeren analisiak"
+
+#. window title
+#: src/gfu-main.ui:21
+msgid "Devices"
+msgstr "Gailuak"
+
+#: src/gfu-main.ui:28
+msgid "Main Menu"
+msgstr "Menu nagusia"
+
+#. LVFS is an online firmware provider
+#: src/gfu-main.ui:83
+msgid "LVFS is not enabled"
+msgstr "LVFS ez dago gaituta"
+
+#. we need metadata so we know where to get the firmware from
+#: src/gfu-main.ui:93
+msgid ""
+"Firmware metadata can be obtained from the Linux Vendor Firmware Service at "
+"no cost."
+msgstr "Firmwarearen metadatuak Linux Vendor Firmaware Service zerbitzutik eskuratu daiteke kosturik gabe."
+
+#. button text
+#: src/gfu-main.ui:104
+msgid "Enable"
+msgstr "Gaitu"
+
+#. group title
+#: src/gfu-main.ui:135
+msgid "Device Properties"
+msgstr "Gailu-propietateak"
+
+#. title: device version
+#: src/gfu-main.ui:140
+msgid "Current Version"
+msgstr "Uneko bertsioa"
+
+#. title: if the device is locked
+#: src/gfu-main.ui:150
+msgid "Lock Status"
+msgstr "Blokeo-egoera"
+
+#. title: the lowest version we can update to
+#: src/gfu-main.ui:161
+msgid "Minimum Version"
+msgstr "Gutxieneko bertsioa"
+
+#. title: the version of the [read only] bootloader
+#: src/gfu-main.ui:171
+msgid "Bootloader Version"
+msgstr "Abio-kargatzailearen bertsioa"
+
+#. title: device manufacturer
+#. title: manufacturer that supplied the file
+#: src/gfu-main.ui:181 src/gfu-main.ui:509
+msgid "Vendor"
+msgstr "Fabrikatzailea"
+
+#. title: firmware stream, e.g. coreboot
+#: src/gfu-main.ui:191
+msgid "Branch"
+msgstr "Adarra"
+
+#. title: ime in seconds to update
+#. title: time to deploy this specific update
+#: src/gfu-main.ui:211 src/gfu-main.ui:611
+msgid "Install Duration"
+msgstr "Instalazioaren iraupena"
+
+#. title: how many times the device can be updated
+#: src/gfu-main.ui:221
+msgid "Flashes Left"
+msgstr "Geratzen diren flashak"
+
+#. title: the error text from las time
+#: src/gfu-main.ui:231
+msgid "Update Error"
+msgstr "Eguneratze-errorea"
+
+#. title: problems why we can't use the device
+#: src/gfu-main.ui:247
+msgid "Problems"
+msgstr "Arazoak"
+
+#. title: device unique ID
+#: src/gfu-main.ui:263
+msgid "Serial Number"
+msgstr "Serie-zenbakia"
+
+#. title: if we can verify the firmware
+#: src/gfu-main.ui:273
+msgid "Attestation"
+msgstr "Egiaztatzea"
+
+#. button: save as trusted
+#: src/gfu-main.ui:290
+msgid "_Store…"
+msgstr "_Biltegiratu…"
+
+#. button: verify the checksum
+#: src/gfu-main.ui:304
+msgid "_Verify"
+msgstr "_Egiaztatu"
+
+#: src/gfu-main.ui:316
+msgid "Hardware Identification"
+msgstr "Hardwarearen identifikazioa"
+
+#. title: Information about the release, e.g. is-signed
+#: src/gfu-main.ui:329 src/gfu-main.ui:601
+msgid "Flags"
+msgstr "Banderak"
+
+#. title: there is firmware we can install
+#: src/gfu-main.ui:346
+msgid "Available Releases"
+msgstr "Eskuragarri dauden bertsioak"
+
+#. title: there are no releases to install
+#: src/gfu-main.ui:362
+msgid "No Releases Available"
+msgstr "Ez dago bertsiorik eskuragarri"
+
+#. title: when starting
+#: src/gfu-main.ui:375
+msgid "Loading"
+msgstr "Kargatzen"
+
+#. more information about when we're loading
+#: src/gfu-main.ui:391
+msgid "Loading devices…"
+msgstr "Gailuak kargatzen…"
+
+#. title: no devices could be found we can update
+#: src/gfu-main.ui:407
+msgid "No Devices"
+msgstr "Gailurik ez"
+
+#. title: one line
+#: src/gfu-main.ui:476
+msgid "Summary"
+msgstr "Laburpena"
+
+#. title: multiple lines of prose
+#: src/gfu-main.ui:491
+msgid "Description"
+msgstr "Deskribapena"
+
+#. title: what we are downloading
+#: src/gfu-main.ui:519
+msgid "Filename"
+msgstr "Fitxategi-izena"
+
+#. title: size in bytes
+#: src/gfu-main.ui:537
+msgid "Size"
+msgstr "Tamaina"
+
+#. title: method of doing the update, e.g. DFU
+#: src/gfu-main.ui:547
+msgid "Protocol"
+msgstr "Protokoloa"
+
+#. title: the nice name of the firmware remote
+#: src/gfu-main.ui:560
+msgid "Remote ID"
+msgstr "Urruneko IDa"
+
+#. title: the ID to identify the stream
+#: src/gfu-main.ui:573
+msgid "AppStream ID"
+msgstr "AppStream IDa"
+
+#. title, e.g. Nonfree, GPLv2+ etc
+#: src/gfu-main.ui:591
+msgid "License"
+msgstr "Lizentzia"
+
+#. title: any message we show the user after the update is done
+#: src/gfu-main.ui:621
+msgid "Update Message"
+msgstr "Eguneratze-mezua"
+
+#. title: the type of firmware, e.g. X-ManagementEngine
+#: src/gfu-main.ui:631
+msgid "Categories"
+msgstr "Kategoriak"
+
+#. title: list of security issues, e.g. CVE numbers
+#: src/gfu-main.ui:641
+msgid "Issues"
+msgstr "Auziak"
+
+#. menu-text: download a new copy of the firmware metadata
+#: src/gfu-main.ui:682
+msgid "_Refresh Metadata"
+msgstr "_Freskatu metadatuak"
+
+#. menu-text: select and install a local file
+#: src/gfu-main.ui:686
+msgid "_Install Firmware Archive"
+msgstr "_Instalatu firmware-artxiboa"
+
+#. menu-text: shows information about this ap
+#: src/gfu-main.ui:690
+msgid "_About"
+msgstr "Honi _buruz"
+
+#. TRANSLATORS: update severity
+#: src/gfu-release-row.c:42
+msgid "Critical"
+msgstr "Larria"
+
+#. TRANSLATORS: update severity
+#: src/gfu-release-row.c:49
+msgid "High Priority"
+msgstr "Lehentasun altua"
+
+#. TRANSLATORS: upgrading the firmware
+#: src/gfu-release-row.c:65
+msgid "_Upgrade…"
+msgstr "B_ertsio-berritu…"
+
+#. TRANSLATORS: downgrading the firmware
+#: src/gfu-release-row.c:68
+msgid "_Downgrade…"
+msgstr "Bertsio _zaharragoa instalatu…"
+
+#. TRANSLATORS: installing the same firmware that is
+#. * currently installed
+#: src/gfu-release-row.c:72
+msgid "_Reinstall…"
+msgstr "_Berrinstalatu…"
+
+#. TRANSLATORS: problems are things the user has to fix, e.g. low battery
+#: src/gfu-release-row.c:83
+msgid "Cannot perform action as the device has a problem"
+msgstr "Ezin da ekintza gauzatu gailuak arazo bat daukalako"
+
+#~ msgid "About Lingmo Firmware"
+#~ msgstr "Lingmo Firmware aplikazioari buruz"
+
+#~ msgid "Plugin Defined"
+#~ msgstr "Plugina definitu da"
+
+#~ msgid "GUID"
+#~ msgid_plural "GUIDs"
+#~ msgstr[0] "GUIDa"
+#~ msgstr[1] "GUIDak"
+
+#~ msgid "Less than one minute remaining"
+#~ msgstr "Minutu bat baino gutxiago falta da"
+
+#, c-format
+#~ msgid "%.0f minute remaining"
+#~ msgid_plural "%.0f minutes remaining"
+#~ msgstr[0] "Minutu %.0f falta da"
+#~ msgstr[1] "%.0f minutu falta dira"

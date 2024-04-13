@@ -1,0 +1,1074 @@
+# German translation for lingmo-firmware.
+# Copyright (C) 2022 lingmo-firmware's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lingmo-firmware package.
+#
+# Daniel Schemp <dschemp@mailbox.org>, 2022.
+# Philipp Kiemle <philipp.kiemle@gmail.com>, 2022.
+# Jürgen Benvenuti <gastornis@posteo.org>, 2022, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lingmo-firmware master\n"
+"Report-Msgid-Bugs-To: https://github.com/LingmoOS/lingmo-firmware/issues\n"
+"POT-Creation-Date: 2023-11-29 08:31+0000\n"
+"PO-Revision-Date: 2024-01-26 23:52+0100\n"
+"Last-Translator: Jürgen Benvenuti <gastornis@posteo.org>\n"
+"Language-Team: German <lingmo-de@lingmo.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. TRANSLATORS: the application name
+#. window title
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:8
+#: data/org.lingmo.Firmware.desktop.in:3 src/gfu-main.ui:84
+msgid "Firmware"
+msgstr "Firmware"
+
+#. TRANSLATORS: one-line description for the app
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:10
+#: data/org.lingmo.Firmware.desktop.in:4
+msgid "Install firmware on devices"
+msgstr "Firmware auf Geräten installieren"
+
+#. TRANSLATORS: AppData description marketing paragraph
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:13
+msgid "Update, reinstall and downgrade firmware on devices supported by fwupd."
+msgstr ""
+"Firmware auf von »fwupd« unterstützten Geräten aktualisieren, neu "
+"installieren oder herabstufen."
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:20
+msgid "Devices panel"
+msgstr "Geräte"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:24
+msgid "Releases panel"
+msgstr "Veröffentlichungen"
+
+#: data/appdata/org.lingmo.Firmware.metainfo.xml.in:28
+msgid "Richard Hughes"
+msgstr "Richard Hughes"
+
+#. TRANSLATORS: these are desktop keywords - remember the trailing ';' :)
+#: data/org.lingmo.Firmware.desktop.in:12
+msgid "Firmware;"
+msgstr "Firmware;"
+
+#. TRANSLATORS: We verified the payload against the server
+#: src/gfu-common.c:144
+msgid "Trusted payload"
+msgstr "Vertrauenswürdige Nutzdaten"
+
+#. TRANSLATORS: We verified the meatdata against the server
+#: src/gfu-common.c:148
+msgid "Trusted metadata"
+msgstr "Vertrauenswürdige Metadaten"
+
+#. TRANSLATORS: version is newer
+#: src/gfu-common.c:152
+msgid "Is upgrade"
+msgstr "Ist Aktualisierung"
+
+#. TRANSLATORS: version is older
+#: src/gfu-common.c:156
+msgid "Is downgrade"
+msgstr "Ist Herabsetzung"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:160
+msgid "Blocked version"
+msgstr "Blockierte Version"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:164
+msgid "Not approved"
+msgstr "Nicht zugelassen"
+
+#. TRANSLATORS: is not the main firmware stream
+#: src/gfu-common.c:168
+msgid "Alternate branch"
+msgstr "Alternativer Zweig"
+
+#. TRANSLATORS: is not supported by the vendor
+#: src/gfu-common.c:172
+msgid "Community supported"
+msgstr "Von der Gemeinschaft unterstützt"
+
+#. TRANSLATORS: the QA team is someone we trust
+#: src/gfu-common.c:177
+msgid "Report is trusted"
+msgstr "Bericht ist vetrauenswürdig"
+
+#. TRANSLATORS: Device cannot be removed easily
+#: src/gfu-common.c:303
+msgid "Internal device"
+msgstr "Internes Gerät"
+
+#. TRANSLATORS: Device is updatable in this or any other mode
+#: src/gfu-common.c:307
+msgid "Updatable"
+msgstr "Aktualisierbar"
+
+#. TRANSLATORS: Update can only be done from offline mode
+#: src/gfu-common.c:311
+msgid "Update requires a reboot"
+msgstr "Aktualisierung erfordert einen Neustart"
+
+#. TRANSLATORS: Must be plugged in to an outlet
+#: src/gfu-common.c:315
+msgid "System requires external power source"
+msgstr "System erfordert externe Stromversorgung"
+
+#. TRANSLATORS: Is locked and can be unlocked
+#: src/gfu-common.c:319
+msgid "Device is locked"
+msgstr "Gerät ist gesperrt"
+
+#. TRANSLATORS: Is found in current metadata
+#: src/gfu-common.c:323
+msgid "Supported on LVFS"
+msgstr "Unterstützt auf LVFS"
+
+#. TRANSLATORS: Requires a bootloader mode to be manually enabled by the user
+#: src/gfu-common.c:327
+msgid "Requires a bootloader"
+msgstr "Erfordert einen Bootloader"
+
+#. TRANSLATORS: Requires a reboot to apply firmware or to reload hardware
+#: src/gfu-common.c:331
+msgid "Needs a reboot after installation"
+msgstr "Erfordert einen Neustart nach Installation"
+
+#. TRANSLATORS: Requires system shutdown to apply firmware
+#: src/gfu-common.c:335
+msgid "Needs shutdown after installation"
+msgstr "Erfordert Herunterfahren nach Installation"
+
+#. TRANSLATORS: Has been reported to a metadata server
+#: src/gfu-common.c:339
+msgid "Reported to LVFS"
+msgstr "Auf LVFS gemeldet"
+
+#. TRANSLATORS: User has been notified
+#: src/gfu-common.c:343
+msgid "User has been notified"
+msgstr "Benutzer wurde benachrichtigt"
+
+#. TRANSLATORS: Install composite firmware on the parent before the child
+#: src/gfu-common.c:351
+msgid "Install to parent device first"
+msgstr "Zuerst auf das übergeordnete Gerät installieren"
+
+#. TRANSLATORS: Is currently in bootloader mode
+#: src/gfu-common.c:355
+msgid "Is in bootloader mode"
+msgstr "Ist im Bootloader-Modus"
+
+#. TRANSLATORS: The hardware is waiting to be replugged
+#: src/gfu-common.c:359
+msgid "Hardware is waiting to be replugged"
+msgstr "Hardware wartet darauf, neu eingesteckt zu werden"
+
+#. TRANSLATORS: Ignore validation safety checks when flashing this device
+#: src/gfu-common.c:363
+msgid "Ignore validation safety checks"
+msgstr "Validierungs-Sicherheitsüberprüfungen ignorieren"
+
+#. TRANSLATORS: Device update needs to be separately activated
+#: src/gfu-common.c:375
+msgid "Device update needs activation"
+msgstr "Geräteaktualisierung erfordert Aktivierung"
+
+#. TRANSLATORS: Device will not return after update completes
+#: src/gfu-common.c:391
+msgid "Device will not re-appear after update completes"
+msgstr "Gerät wird nach Aktualisierung nicht wieder erscheinen"
+
+#. TRANSLATORS: Device supports some form of checksum verification
+#: src/gfu-common.c:395
+msgid "Cryptographic hash verification is available"
+msgstr "Kryptografische Hash-Überprüfung ist verfügbar"
+
+# "The device firmware update architecture uses a redundancy mechanism such as A/B partitions for updates." (https://github.com/fwupd/fwupd/blob/f4fb625fbadb19e7274d93977d35269a18e149e0/libfwupd/fwupd-enums.h#L329) - ts
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:403
+msgid "Device stages updates"
+msgstr "Gerät kann Aktualisierungen zwischenspeichern"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:407
+msgid "Device can recover flash failures"
+msgstr "Gerät kann Flash-Fehler überstehen"
+
+#. TRANSLATORS: Device remains usable during update
+#: src/gfu-common.c:411
+msgid "Device is usable for the duration of the update"
+msgstr "Gerät kann während Aktualisierung verwendet werden"
+
+#. TRANSLATORS: Device does not jump directly to the newest
+#: src/gfu-common.c:415
+msgid "Device installs all intermediate releases"
+msgstr "Gerät aktualisiert schrittweise mit Zwischenversionen"
+
+#. TRANSLATORS: Device does not restart and requires a manual action
+#: src/gfu-common.c:419
+msgid "Device skips restart"
+msgstr "Gerät startet nicht automatisch neu"
+
+#. TRANSLATORS: the stream can be provided by different vendors
+#: src/gfu-common.c:423
+msgid "Device supports switching to a different stream of firmware"
+msgstr "Gerät unterstützt Wechsel auf andere Firmware-Zweige"
+
+#. TRANSLATORS: it is saved to the users local disk
+#: src/gfu-common.c:427
+msgid "Device firmware will be saved before installing updates"
+msgstr "Geräte-Firmware wird vor Aktualisierung lokal gespeichert"
+
+#. TRANSLATORS: on some systems certain devices have to have matching versions,
+#. * e.g. the EFI driver for a given network card cannot be different
+#: src/gfu-common.c:432
+msgid "All devices of the same type will be updated at the same time"
+msgstr "Geräte gleicher Art werden gleichzeitig aktualisiert"
+
+#. TRANSLATORS: some devices can only be updated to a new semver and cannot
+#. * be downgraded or reinstalled with the sexisting version
+#: src/gfu-common.c:437
+msgid "Only version upgrades are allowed"
+msgstr "Nur Versions-Aktualisierungen erlaubt"
+
+#. TRANSLATORS: the device is currently unreachable, perhaps because it is in a
+#. * lower power state or is out of wireless range
+#: src/gfu-common.c:442
+msgid "Device is currently unreachable"
+msgstr "Gerät ist aktuell nicht erreichbar"
+
+#. TRANSLATORS: a volume with full-disk-encryption was found on this machine,
+#. * typically a Windows NTFS partition with BitLocker
+#: src/gfu-common.c:447
+msgid "May invalidate secrets used to decrypt volumes"
+msgstr ""
+"Kann Verschlüsselungs-Geheimnisse ungültig machen. Diese sind notwendig, um "
+"Partitionen zu entschlüsseln"
+
+#. TRANSLATORS: the vendor is no longer supporting the device
+#: src/gfu-common.c:451
+msgid "End of life"
+msgstr "Nicht mehr unterstützt"
+
+#. TRANSLATORS: firmware is verified on-device the payload using strong crypto
+#: src/gfu-common.c:455
+msgid "Signed payload"
+msgstr "Signierte Nutzdaten"
+
+#. TRANSLATORS: firmware payload is unsigned and it is possible to modify it
+#: src/gfu-common.c:459
+msgid "Unsigned payload"
+msgstr "Nicht signierte Nutzdaten"
+
+#. TRANSLATORS: this device is not actually real
+#: src/gfu-common.c:463
+msgid "Emulated"
+msgstr "Emuliert"
+
+#. TRANSLATORS: we're saving all USB events for emulation
+#: src/gfu-common.c:467
+msgid "Tagged for emulation"
+msgstr "Für Emulation markiert"
+
+#. TRANSLATORS: device should stay on one firmware version unless the new version
+#. * is explicitly specified
+#: src/gfu-common.c:473
+msgid "Only explicit updates"
+msgstr "Nur ausdrücklich angegebene Aktualisierungen"
+
+#. TRANSLATORS: daemon is inactive
+#: src/gfu-common.c:576
+msgid "Idle…"
+msgstr "Inaktiv …"
+
+#. TRANSLATORS: decompressing the firmware file
+#: src/gfu-common.c:580
+msgid "Decompressing…"
+msgstr "Entpacken …"
+
+#. TRANSLATORS: parsing the firmware information
+#: src/gfu-common.c:584
+msgid "Loading…"
+msgstr "Laden …"
+
+#. TRANSLATORS: restarting the device to pick up new F/W
+#: src/gfu-common.c:588
+msgid "Restarting device…"
+msgstr "Gerät wird neu gestartet …"
+
+#. TRANSLATORS: reading from the flash chips
+#: src/gfu-common.c:592
+msgid "Reading…"
+msgstr "Lesen …"
+
+#. TRANSLATORS: writing to the flash chips
+#: src/gfu-common.c:596
+msgid "Writing…"
+msgstr "Schreiben …"
+
+#. TRANSLATORS: erasing contents of the flash chips
+#: src/gfu-common.c:600
+msgid "Erasing…"
+msgstr "Löschen …"
+
+#. TRANSLATORS: verifying we wrote the firmware correctly
+#: src/gfu-common.c:604
+msgid "Verifying…"
+msgstr "Überprüfen …"
+
+#. TRANSLATORS: scheduing an update to be done on the next boot
+#: src/gfu-common.c:608
+msgid "Scheduling…"
+msgstr "Planen …"
+
+#. TRANSLATORS: downloading from a remote server
+#: src/gfu-common.c:612
+msgid "Downloading…"
+msgstr "Herunterladen …"
+
+#. TRANSLATORS: waiting for user to authenticate
+#: src/gfu-common.c:616
+msgid "Authenticating…"
+msgstr "Authentifizieren …"
+
+#. TRANSLATORS: waiting for device to do something
+#: src/gfu-common.c:620
+msgid "Waiting…"
+msgstr "Warten …"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:624
+msgid "Shutting down…"
+msgstr "Herunterfahren …"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:629
+msgid "Waiting for user…"
+msgstr "Auf Benutzer warten …"
+
+#. TRANSLATORS: the attestation failed
+#: src/gfu-main.c:248
+msgid "Not OK"
+msgstr "Nicht OK"
+
+#. TRANSLATORS: the checksum verified
+#: src/gfu-main.c:253 src/gfu-main.c:1084
+msgid "OK"
+msgstr "OK"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:264
+msgid "System power is too low to perform the update"
+msgstr "Der Akkustand ist zu niedrig, um die Aktualisierung durchzuführen"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:268
+#, c-format
+msgid "System power is too low to perform the update (%u%%, requires %u%%)"
+msgstr ""
+"Der Akkustand ist zu niedrig, um die Aktualisierung durchzuführen (%u%%, "
+"erfordert %u%%)"
+
+#. TRANSLATORS: for example, a Bluetooth mouse that is in powersave mode
+#: src/gfu-main.c:274
+msgid "Device is unreachable, or out of wireless range"
+msgstr ""
+"Gerät ist nicht erreichbar, oder es befindet sich außerhalb des drahtlosen "
+"Bereichs"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:281
+msgid "Device battery power is too low"
+msgstr "Akkustand des Gerätes ist zu niedrig"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:284
+#, c-format
+msgid "Device battery power is too low (%u%%, requires %u%%)"
+msgstr "Akkustand des Gerätes ist zu niedrig (%u%%, erfordert %u%%)"
+
+#. TRANSLATORS: usually this is when we're waiting for a reboot
+#: src/gfu-main.c:290
+msgid "Device is waiting for the update to be applied"
+msgstr "Gerät wartet darauf, dass die Aktualisierungen angewendet werden"
+
+#. TRANSLATORS: as in, wired mains power for a laptop
+#: src/gfu-main.c:294
+msgid "Device requires AC power to be connected"
+msgstr "Das Gerät benötigt eine externe Stromversorgung, um verbunden zu sein"
+
+#. TRANSLATORS: lid means "laptop top cover"
+#: src/gfu-main.c:298
+msgid "Device cannot be used while the lid is closed"
+msgstr ""
+"Gerät kann nicht verwendet werden, während der  Bildschirm heruntergeklappt "
+"ist"
+
+#. TRANSLATORS: device cannot be interrupted, for instance taking a phone call
+#: src/gfu-main.c:303
+msgid "Device is in use"
+msgstr "Gerät wird gerade verwendet"
+
+#. TRANSLATORS: device cannot be interrupted, for instance taking a phone call
+#: src/gfu-main.c:309
+msgid "Device cannot be used while there are no displays plugged in"
+msgstr ""
+"Das Gerät kann nicht verwendet werden, solange keine Bildschirme "
+"angeschlossen sind"
+
+#. TRANSLATORS: the hw IDs the device defines,
+#. * e.g. USB:0x1234
+#: src/gfu-main.c:408 src/gfu-main.ui:230
+msgid "Vendor ID"
+msgid_plural "Vendor IDs"
+msgstr[0] "Hersteller-Kennung"
+msgstr[1] "Hersteller-Kennungen"
+
+#. TRANSLATORS: the checksum state was unknown
+#: src/gfu-main.c:438
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#. TRANSLATORS: error in shutting down the system
+#: src/gfu-main.c:515
+msgid "Failed to shutdown device"
+msgstr "Herunterfahren des Gerätes fehlgeschlagen"
+
+#: src/gfu-main.c:516
+msgid "A manual shutdown is required."
+msgstr "Ein manuelles Herunterfahren ist erforderlich."
+
+#. TRANSLATORS: error in rebooting down the system
+#: src/gfu-main.c:531
+msgid "Failed to reboot device"
+msgstr "Neustart des Gerätes fehlgeschlagen"
+
+#: src/gfu-main.c:532
+msgid "A manual reboot is required."
+msgstr "Ein manueller Neustart ist erforderlich."
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:551
+msgid "Failed to load list of remotes"
+msgstr "Laden der Gegenstellenliste fehlgeschlagen"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:645
+msgid "Failed to load device list"
+msgstr "Laden der Geräteliste fehlgeschlagen"
+
+#. TRANSLATORS: no devices supporting firmware updates were found
+#: src/gfu-main.c:670
+msgid "No supported devices were found…"
+msgstr "Es wurden keine unterstützten Geräte gefunden …"
+
+# "Aufgefrischt" und nicht "aktualisiert", analog zu "apt update" vs. "apt upgrade" - pk
+#. TRANSLATORS: the list of available firmware failed to be updated
+#: src/gfu-main.c:772
+msgid "Failed to refresh metadata"
+msgstr "Auffrischen der Metadaten fehlgeschlagen"
+
+#. TRANSLATORS: the LVFS remote was not found on the system
+#: src/gfu-main.c:787
+msgid "Failed to find LVFS"
+msgstr "LVFS konnte nicht gefunden werden"
+
+#. TRANSLATORS: the LVFS remote could not be enabled
+#: src/gfu-main.c:805
+msgid "Failed to enable LVFS"
+msgstr "LVFS konnte nicht aktiviert werden"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:846
+msgid "Failed to get remotes list"
+msgstr "Holen der Gegenstellenliste fehlgeschlagen"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:883
+msgid "To complete the update further action is required"
+msgstr ""
+"Um die Aktualisierung abzuschließen, sind weitere Schritte erforderlich"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:886
+msgid "Action is required"
+msgstr "Eine Aktion ist erforderlich"
+
+#. TRANSLATORS: the firmware install failed for an unspecified reason
+#: src/gfu-main.c:987
+msgid "Failed to install firmware"
+msgstr "Installieren der Firmware fehlgeschlagen"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1011
+msgid "The update requires the system to shutdown to complete."
+msgstr ""
+"Um die Aktualisierung abzuschließen, ist das Herunterfahren des Systems "
+"erforderlich."
+
+#: src/gfu-main.c:1014 src/gfu-main.c:1689
+msgid "Shutdown now?"
+msgstr "Jetzt herunterfahren?"
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1027
+msgid "The update requires a reboot to complete."
+msgstr ""
+"Um die Aktualisierung abzuschließen, ist ein Neustart des Systems "
+"erforderlich."
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1030 src/gfu-main.c:1707
+msgid "Restart now?"
+msgstr "Jetzt neu starten?"
+
+#. TRANSLATORS: inform the user that the
+#. installation was successful onto the device
+#: src/gfu-main.c:1044
+msgid "Installation successful"
+msgstr "Installation erfolgreich"
+
+#. TRANSLATORS: dialog text, %1 is a
+#. * version number, %2 is a device name
+#: src/gfu-main.c:1048
+#, c-format
+msgid "Installed firmware version %s on %s."
+msgstr "Firmware-Version %s wurde auf %s installiert."
+
+#. TRANSLATORS: e.g. bitlocker
+#: src/gfu-main.c:1083
+msgid "Full disk encryption detected"
+msgstr "Laufwerksverschlüsselung entdeckt"
+
+#. TRANSLATORS: buttons
+#: src/gfu-main.c:1085 src/gfu-main.c:1129
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. TRANSLATORS: the platform secret is stored in the PCRx registers on the TPM
+#: src/gfu-main.c:1091
+msgid ""
+"Some of the platform secrets may be invalidated when updating this firmware."
+msgstr ""
+"Einige Plattform-Geheimnisse können durch die Firmware-Aktualisierung "
+"ungültig gemacht werden."
+
+#. TRANSLATORS: 'recovery key' here refers to a code, rather than a metal thing
+#: src/gfu-main.c:1093
+msgid "Please ensure you have the volume recovery key before continuing."
+msgstr ""
+"Stellen Sie bitte sicher, dass Sie den Laufwerks-Wiederherstellungsschlüssel "
+"besitzen, bevor Sie fortfahren."
+
+#. TRANSLATORS: title, %1 is the firmware vendor, %2 is the
+#. device vendor name
+#: src/gfu-main.c:1112
+#, c-format
+msgid "The firmware from %s is not supplied by %s"
+msgstr "Die Firmware von %s wird nicht durch %s bereitgestellt"
+
+#. TRANSLATORS: branch switch title
+#: src/gfu-main.c:1117
+msgid "The firmware is not supplied by the vendor"
+msgstr "Die Firmware wird nicht durch den Hersteller bereitgestellt"
+
+#. TRANSLATORS: button text to switch to another stream of firmware
+#: src/gfu-main.c:1131
+msgid "Switch Branch"
+msgstr "Zweig wechseln"
+
+#. TRANSLATORS: %1 is the device vendor name
+#: src/gfu-main.c:1136
+#, c-format
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with %s."
+msgstr ""
+"Ihre Hardware kann durch die Benutzung dieser Firmware beschädigt werden. "
+"Die Installation dieser Version kann Garantieansprüche an %s erlöschen "
+"lassen."
+
+#. TRANSLATORS: the vendor is unknown
+#: src/gfu-main.c:1143
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with the vendor."
+msgstr ""
+"Ihre Hardware kann durch die Benutzung dieser Firmware beschädigt werden. "
+"Die Installation dieser Version kann Garantieansprüche an den Hersteller "
+"erlöschen lassen."
+
+#. TRANSLATORS: should the branch be changed
+#: src/gfu-main.c:1150
+msgid "You must understand the consequences of changing the firmware branch."
+msgstr ""
+"Sie müssen sich über die Konsequenzen klar sein, die ein Wechsel des "
+"Firmware-Zweigs mit sich bringt."
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1170
+#, c-format
+msgid "Reinstall %s firmware version %s?"
+msgstr "Soll die %s Firmware mit Version %s neu installiert werden?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1173
+#, c-format
+msgid "Upgrade %s firmware version %s?"
+msgstr "Soll die %s Firmware mit Version %s aktualisiert werden?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1176
+#, c-format
+msgid "Downgrade %s firmware version %s?"
+msgstr "Soll die %s Firmware mit Version %s deaktualisiert werden?"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1179
+#, c-format
+msgid "Install %s firmware version %s?"
+msgstr "Soll die %s Firmware mit Version %s installiert werden?"
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1190
+msgid "_Cancel"
+msgstr "_Abbrechen"
+
+#. TRANSLATORS: button text: install the same version again
+#: src/gfu-main.c:1195
+msgid "_Reinstall"
+msgstr "_Neu installieren"
+
+#. TRANSLATORS: button text, move from old -> new
+#: src/gfu-main.c:1201
+msgid "_Upgrade"
+msgstr "_Aktualisieren"
+
+#. TRANSLATORS: button text, move from new -> old
+#: src/gfu-main.c:1205
+msgid "_Downgrade"
+msgstr "_Deaktualisieren"
+
+#. TRANSLATORS: the device can be used normallly
+#: src/gfu-main.c:1213
+msgid "The device will remain usable for the duration of the update"
+msgstr "Das Gerät kann während der Aktualisierung verwendet werden"
+
+#. TRANSLATORS: the device will be non-fuctional for a while
+#: src/gfu-main.c:1219
+msgid "The device will be unusable while the update is installing"
+msgstr "Das Gerät kann während der Aktualisierung nicht verwendet werden"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1287
+msgid "Failed to verify firmware"
+msgstr "Verifizierung der Firmware fehlgeschlagen"
+
+#. TRANSLATORS: inform the user that the
+#. firmware verification was successful
+#: src/gfu-main.c:1298
+msgid "Verification succeeded"
+msgstr "Verifizierung erfolgreich"
+
+#. TRANSLATORS: firmware is cryptographically identical
+#: src/gfu-main.c:1302
+#, c-format
+msgid "%s firmware checksums matched"
+msgstr "%s Firmware-Prüfsummen stimmen überein"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1334
+msgid "Verify firmware checksums?"
+msgstr "Firmware-Prüfsummen verifizieren?"
+
+#. TRANSLATORS: device will "go away" and then "come back"
+#: src/gfu-main.c:1339
+msgid "The device may be unusable during this action"
+msgstr "Das Gerät kann unter Umständen währenddessen nicht verwendet werden"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1352
+msgid "Failed to update checksums"
+msgstr "Aktualisieren der Prüfsummen fehlgeschlagen"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1383
+msgid "Update cryptographic hash"
+msgstr "Kryptografischen Hash aktualisieren"
+
+#. TRANSLATORS: save what we have now as "valid"
+#: src/gfu-main.c:1388
+msgid "Record current device cryptographic hashes as verified?"
+msgstr ""
+"Den kryptografischen Hash des aktuellen Gerätes als verifiziert setzen?"
+
+#. TRANSLATORS: command description
+#: src/gfu-main.c:1416 src/gfu-main.c:1914
+msgid "Lingmo Firmware"
+msgstr "Lingmo Firmware"
+
+#. TRANSLATORS: you can put your name here :)
+#: src/gfu-main.c:1427
+msgid "translator-credits"
+msgstr ""
+"Daniel Schemp <dschemp@mailbox.org>\n"
+"Philipp Kiemle <philipp.kiemle@gmail.com>\n"
+"Jürgen Benvenuti <gastornis@posteo.org>"
+
+#: src/gfu-main.c:1481
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "Kategorie"
+msgstr[1] "Kategorien"
+
+#. title: hashes of the file payload
+#: src/gfu-main.c:1500 src/gfu-main.ui:680
+msgid "Checksum"
+msgid_plural "Checksums"
+msgstr[0] "Prüfsumme"
+msgstr[1] "Prüfsummen"
+
+#. TRANSLATORS: list of security issues, e.g. CVEs
+#: src/gfu-main.c:1518
+msgid "Fixed Issue"
+msgid_plural "Fixed Issues"
+msgstr[0] "Behobener Fehler"
+msgstr[1] "Behobene Fehler"
+
+#. TRANSLATORS: as in non-free
+#: src/gfu-main.c:1556
+msgid "Proprietary"
+msgstr "Proprietär"
+
+#. TRANSLATORS: maybe try Linux?
+#: src/gfu-main.c:1648 src/gfu-main.c:1751
+msgid "The fwupd service is not available for your OS."
+msgstr "Der fwupd-Dienst steht für Ihr Betriebssystem nicht zur Verfügung."
+
+#. TRANSLATORS: unlock means to make the device functional in another mode
+#: src/gfu-main.c:1672
+msgid "Failed to unlock device"
+msgstr "Entsperren des Geräts fehlgeschlagen"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1686
+msgid "Unlocking a device requires the system to shutdown to complete."
+msgstr "Das Entsperren eines Gerätes erfordert das Herunterfahren des Systems."
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1703
+msgid "Unlocking a device requires a reboot to complete."
+msgstr "Das Entsperren eines Gerätes erfordert einen Neustart."
+
+#. TRANSLATORS: command line option
+#: src/gfu-main.c:1903
+msgid "Show extra debugging information"
+msgstr "Zusätzliche Informationen zur Fehlerbehebung anzeigen"
+
+#. TRANSLATORS: the user has sausages for fingers
+#: src/gfu-main.c:1918
+msgid "Failed to parse command line options"
+msgstr "Verarbeiten der Kommandozeilen-Optionen fehlgeschlagen"
+
+#. window title
+#: src/gfu-main.ui:50
+msgid "Devices"
+msgstr "Geräte"
+
+#: src/gfu-main.ui:57
+msgid "Main Menu"
+msgstr "Hauptmenü"
+
+#. LVFS is an online firmware provider
+#: src/gfu-main.ui:112
+msgid "LVFS is not enabled"
+msgstr "LVFS ist nicht aktiviert"
+
+#. we need metadata so we know where to get the firmware from
+#: src/gfu-main.ui:122
+msgid ""
+"Firmware metadata can be obtained from the Linux Vendor Firmware Service at "
+"no cost."
+msgstr ""
+"Firmware-Metadaten können kostenfrei vom Linux Vendor Firmware Service "
+"bezogen werden."
+
+#. button text
+#: src/gfu-main.ui:133
+msgid "Enable"
+msgstr "Aktivieren"
+
+#. group title
+#: src/gfu-main.ui:164
+msgid "Device Properties"
+msgstr "Geräte-Eigenschaften"
+
+#. title: device version
+#: src/gfu-main.ui:169
+msgid "Current Version"
+msgstr "Aktuelle Version"
+
+#. title: if the device is locked
+#: src/gfu-main.ui:179
+msgid "Lock Status"
+msgstr "Sperrstatus"
+
+#. title: the lowest version we can update to
+#: src/gfu-main.ui:190
+msgid "Minimum Version"
+msgstr "Minimale Version"
+
+#. title: the version of the [read only] bootloader
+#: src/gfu-main.ui:200
+msgid "Bootloader Version"
+msgstr "Bootloader-Version"
+
+#. title: device manufacturer
+#. title: manufacturer that supplied the file
+#: src/gfu-main.ui:210 src/gfu-main.ui:538
+msgid "Vendor"
+msgstr "Hersteller"
+
+#. title: firmware stream, e.g. coreboot
+#: src/gfu-main.ui:220
+msgid "Branch"
+msgstr "Zweig"
+
+#. title: ime in seconds to update
+#. title: time to deploy this specific update
+#: src/gfu-main.ui:240 src/gfu-main.ui:640
+msgid "Install Duration"
+msgstr "Installationsdauer"
+
+#. title: how many times the device can be updated
+#: src/gfu-main.ui:250
+msgid "Flashes Left"
+msgstr "Verbleibende Flashes"
+
+#. title: the error text from las time
+#: src/gfu-main.ui:260
+msgid "Update Error"
+msgstr "Aktualisierungs-Fehler"
+
+#. title: problems why we can't use the device
+#: src/gfu-main.ui:276
+msgid "Problems"
+msgstr "Probleme"
+
+#. title: device unique ID
+#: src/gfu-main.ui:292
+msgid "Serial Number"
+msgstr "Seriennummer"
+
+#. title: if we can verify the firmware
+#: src/gfu-main.ui:302
+msgid "Attestation"
+msgstr "Bescheinigung"
+
+#. button: save as trusted
+#: src/gfu-main.ui:319
+msgid "_Store…"
+msgstr "_Speichern …"
+
+#. button: verify the checksum
+#: src/gfu-main.ui:333
+msgid "_Verify"
+msgstr "Über_prüfen"
+
+#: src/gfu-main.ui:345
+msgid "Hardware Identification"
+msgstr "Hardware-Identifikation"
+
+#. title: Information about the release, e.g. is-signed
+#: src/gfu-main.ui:358 src/gfu-main.ui:630
+msgid "Flags"
+msgstr "Merkmale"
+
+#. title: there is firmware we can install
+#: src/gfu-main.ui:375
+msgid "Available Releases"
+msgstr "Verfügbare Veröffentlichungen"
+
+#. title: there are no releases to install
+#: src/gfu-main.ui:391
+msgid "No Releases Available"
+msgstr "Keine Veröffentlichungen verfügbar"
+
+#. title: when starting
+#: src/gfu-main.ui:404
+msgid "Loading"
+msgstr "Wird geladen"
+
+#. more information about when we're loading
+#: src/gfu-main.ui:420
+msgid "Loading devices…"
+msgstr "Geräte werden geladen …"
+
+#. title: no devices could be found we can update
+#: src/gfu-main.ui:436
+msgid "No Devices"
+msgstr "Keine Geräte"
+
+#. title: one line
+#: src/gfu-main.ui:505
+msgid "Summary"
+msgstr "Zusammenfassung"
+
+#. title: multiple lines of prose
+#: src/gfu-main.ui:520
+msgid "Description"
+msgstr "Beschreibung"
+
+#. title: what we are downloading
+#: src/gfu-main.ui:548
+msgid "Filename"
+msgstr "Dateiname"
+
+#. title: size in bytes
+#: src/gfu-main.ui:566
+msgid "Size"
+msgstr "Größe"
+
+#. title: method of doing the update, e.g. DFU
+#: src/gfu-main.ui:576
+msgid "Protocol"
+msgstr "Protokoll"
+
+#. title: the nice name of the firmware remote
+#: src/gfu-main.ui:589
+msgid "Remote ID"
+msgstr "Gegenstellen-Kennung"
+
+#. title: the ID to identify the stream
+#: src/gfu-main.ui:602
+msgid "AppStream ID"
+msgstr "AppStream-Kennung"
+
+#. title, e.g. Nonfree, GPLv2+ etc
+#: src/gfu-main.ui:620
+msgid "License"
+msgstr "Lizenz"
+
+#. title: any message we show the user after the update is done
+#: src/gfu-main.ui:650
+msgid "Update Message"
+msgstr "Aktualisierungs-Nachricht"
+
+#. title: the type of firmware, e.g. X-ManagementEngine
+#: src/gfu-main.ui:660
+msgid "Categories"
+msgstr "Kategorien"
+
+#. title: list of security issues, e.g. CVE numbers
+#: src/gfu-main.ui:670
+msgid "Issues"
+msgstr "Fehlermeldungen"
+
+# "Auffrischen" und nicht "aktualisieren", analog zu "apt update" vs. "apt upgrade" - pk
+#. menu-text: download a new copy of the firmware metadata
+#: src/gfu-main.ui:711
+msgid "_Refresh Metadata"
+msgstr "Metadaten _auffrischen"
+
+#. menu-text: select and install a local file
+#: src/gfu-main.ui:715
+msgid "_Install Firmware Archive"
+msgstr "Firmware-_Archiv installieren"
+
+#: src/gfu-main.ui:719
+msgid "_Keyboard Shortcuts"
+msgstr "Tasten_kürzel"
+
+#. menu-text: shows information about this ap
+#: src/gfu-main.ui:723
+msgid "_About"
+msgstr "_Info"
+
+#: src/help-overlay.ui:12
+msgid "General"
+msgstr "Allgemein"
+
+# "Auffrischen" und nicht "aktualisieren", analog zu "apt update" vs. "apt upgrade" - pk
+#: src/help-overlay.ui:17
+msgid "Refresh Metadata"
+msgstr "Metadaten auffrischen"
+
+#: src/help-overlay.ui:23
+msgid "Install Firmware Archive"
+msgstr "Firmware-Archiv installieren"
+
+#: src/help-overlay.ui:29
+msgid "Open Main Menu"
+msgstr "Hauptmenü öffnen"
+
+#: src/help-overlay.ui:35
+msgid "Show Keyboard Shortcuts"
+msgstr "Tastenkürzel anzeigen"
+
+#: src/help-overlay.ui:41
+msgid "Close Window"
+msgstr "Fenster schließen"
+
+#: src/help-overlay.ui:47
+msgid "Quit"
+msgstr "Beenden"
+
+#. TRANSLATORS: update severity
+#: src/gfu-release-row.c:42
+msgid "Critical"
+msgstr "Kritisch"
+
+#. TRANSLATORS: update severity
+#: src/gfu-release-row.c:49
+msgid "High Priority"
+msgstr "Hohe Priorität"
+
+#. TRANSLATORS: upgrading the firmware
+#: src/gfu-release-row.c:65
+msgid "_Upgrade…"
+msgstr "_Aktualisieren …"
+
+#. TRANSLATORS: downgrading the firmware
+#: src/gfu-release-row.c:68
+msgid "_Downgrade…"
+msgstr "_Deaktualisieren …"
+
+#. TRANSLATORS: installing the same firmware that is
+#. * currently installed
+#: src/gfu-release-row.c:72
+msgid "_Reinstall…"
+msgstr "_Neu installieren …"
+
+#. TRANSLATORS: problems are things the user has to fix, e.g. low battery
+#: src/gfu-release-row.c:83
+msgid "Cannot perform action as the device has a problem"
+msgstr "Aktion kann nicht ausgeführt werden, da das Gerät ein Problem hat"
+
+#~ msgid "Plugin Defined"
+#~ msgstr "Durch Plugin definiert"
+
+#~ msgid "GUID"
+#~ msgid_plural "GUIDs"
+#~ msgstr[0] "GUID"
+#~ msgstr[1] "GUIDs"
+
+#~ msgid "About Lingmo Firmware"
+#~ msgstr "Info zu Lingmo Firmware"
+
+#~ msgid "Less than one minute remaining"
+#~ msgstr "Weniger als eine Minute verbleibend"
+
+#~ msgid "%.0f minute remaining"
+#~ msgid_plural "%.0f minutes remaining"
+#~ msgstr[0] "%.0f Minute verbleibend"
+#~ msgstr[1] "%.0f Minuten verbleibend"

@@ -1,0 +1,100 @@
+name: lingmo-firmware
+adopt-info: lingmo-firmware
+confinement: strict
+grade: stable
+base: core22
+architectures:
+  - amd64
+
+slots:
+  # for GtkApplication registration
+  lingmo-firmware:
+    interface: dbus
+    bus: session
+    name: org.lingmo.Firmware
+
+apps:
+  lingmo-firmware:
+    command: usr/bin/lingmo-firmware
+    plugs:
+      - fwupd
+      - network
+    desktop: usr/share/applications/org.lingmo.Firmware.desktop
+    common-id: org.lingmo.Firmware.desktop
+    extensions: [lingmo]
+    environment:
+      LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/lib/lingmo-firmware
+
+parts:
+  lingmo-firmware:
+    source: .
+    plugin: meson
+    build-environment:
+      - C_INCLUDE_PATH: $CRAFT_STAGE/usr/include/gtksourceview-4
+      - PYTHONPATH: "${CRAFT_STAGE}/usr/lib/python3/dist-packages"
+    meson-parameters:
+      - --prefix=/snap/lingmo-firmware/current/usr
+      - -Dsystemd=false
+      - -Dman=false
+      - -Ddevel=true
+      - -Dlibxmlb:gtkdoc=false
+      - -Dlibxmlb:introspection=false
+      - -Dlibjcat:man=false
+      - -Dlibjcat:gtkdoc=false
+      - -Dlibjcat:introspection=false
+      - -Dlibjcat:tests=false
+      - -Dfwupd:docs=disabled
+      - -Dfwupd:introspection=disabled
+      - -Dfwupd:build=library
+      - -Dfwupd:man=false
+      - -Dfwupd:tests=false
+      - -Dfwupd:python=/usr/bin/python3
+      - -Dgcab:docs=false
+      - -Dgcab:introspection=false
+      - -Dgcab:vapi=false
+      - -Dgcab:tests=false
+    organize:
+      snap/lingmo-firmware/current/usr: usr
+    parse-info: [usr/share/metainfo/org.lingmo.Firmware.metainfo.xml]
+    build-packages:
+      - desktop-file-utils
+      - appstream
+      - appstream-util
+      - help2man
+      - git
+      - libgpgme11-dev
+      - libgtk-4-dev
+      - libgudev-1.0-dev
+      - libjson-glib-dev
+      - libsoup2.4-dev
+      - libcurl4-gnutls-dev
+      - libgnutls28-dev
+      - python3-jinja2
+    override-pull: |
+      craftctl default
+      # Needed to work around parse failure https://bugs.launchpad.net/snapcraft/+bug/1852329
+      sed -e '/^ *<!--.*/d' -i $CRAFT_PART_SRC/data/appdata/org.lingmo.Firmware.metainfo.xml.in
+      sed -i.bak -e 's|Icon=org.lingmo.Firmware$|Icon=${SNAP}/meta/gui/org.lingmo.Firmware.svg|g' $CRAFT_PART_SRC/data/org.lingmo.Firmware.desktop.in
+      craftctl set version=$(git describe HEAD --always)
+    override-build: |
+       craftctl default
+       mkdir -p $CRAFT_PART_INSTALL/meta/gui/
+       cp $CRAFT_PART_SRC/data/icons/org.lingmo.Firmware.svg $CRAFT_PART_INSTALL/meta/gui/
+       cp $CRAFT_PART_BUILD/data/org.lingmo.Firmware.desktop $CRAFT_PART_INSTALL/meta/gui/
+    prime:
+      - -usr/share/appdata
+      - -usr/lib/*/pkgconfig
+
+  libraries:
+    after: [lingmo-firmware]
+    plugin: nil
+    stage-packages:
+      - libevent-2.1-7
+      - libunbound8
+      - libassuan0
+      - libgpgme11
+    prime:
+      - usr/lib/*/libevent*
+      - usr/lib/*/libunbound*
+      - usr/lib/*/libassuan*
+      - usr/lib/*/libgpgme*

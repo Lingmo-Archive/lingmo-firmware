@@ -1,0 +1,25 @@
+Lingmo Firmware Release Notes
+
+Write release entries:
+
+git log --format="%s" --cherry-pick --right-only 45.0... | grep -i -v trivial | grep -v Merge | sort | uniq
+Add any user visible changes into ../data/appdata/org.lingmo.Firmware.metainfo.xml.in
+
+Generate NEWS file:
+appstream-util appdata-to-news ../data/appdata/org.lingmo.Firmware.metainfo.xml.in > NEWS
+
+# MAKE SURE THESE ARE CORRECT
+export release_ver="2.0.0"
+
+git commit -a -m "Version ${release_ver}"
+git tag -s ${release_ver} -m "Version ${release_ver}"
+ninja-build dist
+git push --tags
+git push
+
+scp meson-dist/lingmo-firmware-${release_ver}.tar.* hughsient@people.freedesktop.org:~/public_html/releases
+
+Post release version bump in meson.build
+
+git commit -a -m "trivial: Post release version bump"
+git push

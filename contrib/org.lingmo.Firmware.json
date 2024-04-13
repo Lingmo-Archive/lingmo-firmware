@@ -1,0 +1,120 @@
+{
+  "app-id" : "org.lingmo.Firmware",
+  "sdk" : "org.lingmo.Sdk",
+  "runtime" : "org.lingmo.Platform",
+  "runtime-version" : "master",
+  "command" : "lingmo-firmware",
+  "finish-args" : [
+    "--device=dri",
+    "--share=ipc",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=network",
+    "--system-talk-name=org.freedesktop.login1",
+    "--system-talk-name=org.freedesktop.fwupd"
+  ],
+  "cleanup" : [
+    "/include",
+    "/lib/pkgconfig",
+    "/share/man"
+  ],
+  "modules" : [
+    {
+      "name" : "libxmlb",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dintrospection=false",
+        "-Dgtkdoc=false",
+        "-Dtests=false",
+        "-Dstemmer=false",
+        "-Dcli=false",
+        "--sysconfdir=/app/etc",
+        "--localstatedir=/var/data"
+      ],
+      "sources" : [
+        {
+          "type" : "archive",
+          "url" : "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.8.tar.xz",
+          "sha256" : "87d3729069bc74cc269549173a8fd798dae70bb05016a1353f66146725df0801"
+        }
+      ]
+    },
+    {
+      "name" : "libjcat",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dintrospection=false",
+        "-Dgtkdoc=false",
+        "-Dtests=false",
+        "-Dcli=false",
+        "--sysconfdir=/app/etc",
+        "--localstatedir=/var/data"
+      ],
+      "sources" : [
+        {
+          "type" : "archive",
+          "url" : "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.11.tar.xz",
+          "sha256" : "305687815e97a384e2861a3038acadf11eb967402406799d17214be5dd4e1765"
+        }
+      ]
+    },
+    {
+        "name": "python3-jinja2",
+        "buildsystem": "simple",
+        "build-commands": [
+            "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"jinja2\" --no-build-isolation"
+        ],
+        "sources": [
+            {
+                "type": "file",
+                "url": "https://files.pythonhosted.org/packages/1d/97/2288fe498044284f39ab8950703e88abbac2abbdf65524d576157af70556/MarkupSafe-2.1.1.tar.gz",
+                "sha256": "7f91197cc9e48f989d12e4e6fbc46495c446636dfc81b9ccf50bb0ec74b91d4b"
+            },
+            {
+                "type": "file",
+                "url": "https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c140f6fda3d9de154052708dd3c65/Jinja2-3.1.2-py3-none-any.whl",
+                "sha256": "6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
+            }
+        ]
+    },
+    {
+      "name" : "fwupd",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dbuild=library",
+        "-Dintrospection=disabled",
+        "-Dgusb=disabled",
+        "-Dlibarchive=disabled",
+        "-Dplugin_logitech_bulkcontroller=disabled",
+        "-Dplugin_msr=disabled",
+        "-Ddocs=disabled",
+        "-Dsystemd=disabled",
+        "-Dtests=false"
+      ],
+      "sources" : [
+        {
+          "type" : "archive",
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.9/fwupd-1.9.9.tar.xz",
+          "sha256": "dd31c25b916005376be7ba31aa8e8d8f14eb2acabc24482412aaa2c88b7796e6"
+        }
+      ]
+    },
+    {
+      "name" : "lingmo-firmware",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dman=false"
+      ],
+      "sources" : [
+        {
+          "type" : "git",
+          "url" : "https://github.com/LingmoOS/lingmo-firmware.git",
+          "branch" : "master"
+        }
+      ]
+    }
+  ],
+  "build-options" : {
+    "env" : {    }
+  }
+}
