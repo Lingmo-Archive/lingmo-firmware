@@ -83,7 +83,7 @@ libfwupd = dependency('fwupd', version : '>= 1.8.11', fallback : ['fwupd', 'libf
 libxmlb = dependency('xmlb', version : '>=0.1.7', fallback : ['libxmlb', 'libxmlb_dep'])
 libadwaita = dependency('libadwaita-1', version : '>= 1.4.rc', fallback : ['libadwaita', 'libadwaita_dep'])
 
-lingmo = import('lingmo')
+lingmo = import('gnome')
 i18n = import('i18n')
 
 conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())

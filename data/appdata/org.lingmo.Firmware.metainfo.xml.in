@@ -26,7 +26,7 @@
     </screenshot>
   </screenshots>
   <project_group>Lingmo</project_group>
-  <developer_name>Lingmo OS Team</developer_name>
+  <developer_name>Floating dream</developer_name>
   <developer id="com.hughsie">
     <name>Lingmo OS Team</name>
   </developer>
@@ -44,7 +44,7 @@
   </releases>
   <url type="homepage">https://github.com/LingmoOS/lingmo-firmware</url>
   <url type="bugtracker">https://github.com/LingmoOS/lingmo-firmware/issues</url>
-  <url type="donation"></url>
+  <url type="donation">https://github.com/LingmoOS/lingmo-firmware</url>
   <update_contact>richard_at_hughsie.com</update_contact>
   <content_rating type="oars-1.1">
     <content_attribute id="social-info">moderate</content_attribute>
